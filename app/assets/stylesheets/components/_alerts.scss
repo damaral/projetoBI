@@ -1,0 +1,22 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.alert {
+  margin-bottom: 5px;
+  background-color: lighten($lightBlue, 10%);
+  border: 1px solid lighten($lightBlue, 5%);
+  color: darken($lightBlue, 35%);
+
+  &.light-blue { @include alert(darken($lightBlue, 25)); }
+  &.medium-blue { @include alert($mediumBlue); }
+  &.dark-blue { @include alert($darkBlue); }
+  &.dark-plum { @include alert($darkPlum); }
+  &.border-blue { @include alert($borderBlue); }
+
+  &.orange { @include alert($orange); }
+  &.yellow { @include alert($yellow); }
+  &.red { @include alert($red); }
+  &.blue { @include alert($blue); }
+  &.turquoise { @include alert($turquoise); }
+  &.green { @include alert($green); }
+}

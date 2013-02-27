@@ -1,0 +1,101 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+/* piety lines, bars, pies */
+span.line, span.bar, span.pie {
+  canvas {
+    width: 60px;
+    height: 20px;
+  }
+}
+
+/* audience list on dashboard */
+ul.audience {
+  list-style: none;
+  overflow: auto;
+
+  li {
+    width: 100%;
+    line-height: 54px;
+    overflow: inherit;
+    border-bottom: 1px dotted $lightGray;
+
+    font-weight: 600;
+    .stat-name { margin-left: 10px;}
+
+    .value {
+      float: left;
+      color: #555;
+      font-size: 1.8em;
+      width: 28%;
+    }
+
+    .indicator {
+      float: left;
+      width: 70%;
+    }
+  }
+}
+
+
+/* audience-alt list on dashboard */
+ul.audience-alt {
+  list-style: none;
+  overflow: hidden;
+
+  li {
+    width: 100%;
+    overflow: inherit;
+    padding-top: 5px;
+
+    border-bottom: 1px dotted $lightGray;
+    font-weight: 600;
+
+    .icon {
+      float: left;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    .stat-name {
+      float: left;
+      margin-left: 8px;
+      margin-top: 5px;
+      display: inline-block;
+
+      color: rgba(0, 0, 0, .5);
+      line-height: 50px;
+      text-transform: uppercase;
+      vertical-align: text-bottom;
+    }
+
+    .value {
+      float: left;
+      display: inline-block;
+      margin-left: 8px;
+
+      font-size: 2.5em;
+      line-height: 50px;
+      color: rgba(0, 0, 0, .4);
+      @include blackInsetTextShadow();
+    }
+
+    .progress-bar {
+      width: 30%;
+      float: right;
+      margin-right: 10px;
+      padding-top: 25px;
+    }
+
+    .percent {
+      float: right;
+      margin-top: 5px;
+      display: inline-block;
+
+      color: $mediumBlue;
+      line-height: 50px;
+      text-transform: uppercase;
+      vertical-align: text-bottom;
+    }
+  }
+}

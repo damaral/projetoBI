@@ -1,0 +1,105 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.btn { margin-top: 5px; }
+.dropdown-menu .divider { height: 2px; } //fix
+
+.btn,
+.btn-group.open .btn {
+  &.critical {
+    font-weight: bold;
+  }
+
+  & [class^="icon-"],
+  & [class*=" icon-"] { line-height: 1.2em; }
+
+/*blue default*/
+  &.medium-blue {
+    @include button-color($mediumBlue);
+  }
+  &.light-blue {
+    @include button-color($lightBlue);
+  }
+  &.dark-blue {
+    @include button-color($darkBlue);
+  }
+  &.dark-plum {
+    @include button-color($darkPlum);
+  }
+
+/* other colors*/
+  &.green {
+    @include button-color($green);
+  }
+  &.red {
+    @include button-color($red);
+  }
+  &.blue {
+    @include button-color($blue);
+  }
+  &.turquoise {
+    @include button-color($turquoise);
+  }
+  &.plum {
+    @include button-color($plum);
+  }
+  &.orange {
+    @include button-color($orange);
+  }
+  &.yellow {
+    @include button-color($yellow);
+  }
+
+  &.twitter {
+    @include button-color($twitter-blue);
+  }
+  &.facebook {
+    @include button-color($facebook-blue);
+  }
+}
+
+.big-button {
+  width: 140px;
+  height: 100px;
+  min-width: 80px;
+  min-height: 50px;
+  padding: 15px;
+  margin: 5px;
+  color: $darkGray;
+  background: $lightGray;
+  border: 1px solid darken($lightGray, 5);
+
+  .button-text {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  @include border-radius(5px);
+  @include whiteTextShadow();
+}
+
+.big-button:hover {
+  background: lighten($mediumBlue, 10);
+  color: #fff;
+  @include blackTextShadow();
+}
+
+.big-button i {
+  text-align: center;
+  line-height: 36px;
+  font-size: 30px;
+  display: block;
+  width: 46px;
+  margin: 0px auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.big-button:active,
+.big-button.active {
+  background: $mediumBlue;
+  color: #fff;
+  @include blackTextShadow();
+}
+
+

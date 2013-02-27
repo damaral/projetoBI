@@ -1,0 +1,52 @@
+@import "compass";
+@import "mixin-helpers";
+
+/* Bootstrap - collapsible groups overrides */
+.accordion-group .accordion-heading {
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+    @include whiteTextShadow();
+  }
+  background: $lightGray;
+}
+
+img { vertical-align: baseline; }
+
+/* Buttons and dropdowns overrides */
+.dropdown-menu { font-size: 13px; }
+.btn-group > .btn, .btn-group > .dropdown-menu { font-size: 13px; }
+.btn {
+  &.twitter, &.facebook { font-size: 13px; }
+  font-size: 13px;
+  &.btn-mini { font-size: 11px; }
+}
+
+/* Blockquotes */
+blockquote { margin: 5px auto;}
+blockquote p { font-size: 12px; }
+.blockquote-light-blue { border-left: 5px solid $lightBlue; }
+.blockquote-medium-blue { border-left: 5px solid $mediumBlue; }
+.blockquote-dark-blue { border-left: 5px solid $darkBlue; }
+.blockquote-dark-plum { border-left: 5px solid $darkPlum; }
+.blockquote-yellow { border-left: 5px solid $yellow; }
+.blockquote-orange { border-left: 5px solid $orange; }
+.blockquote-red { border-left: 5px solid $red; }
+.blockquote-turquoise { border-left: 5px solid $turquoise; }
+.blockquote-green { border-left: 5px solid $green; }
+.blockquote-plum { border-left: 5px solid $plum; }
+.blockquote-blue { border-left: 5px solid $blue; }
+
+
+hr.main {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+/* Custom font fixes */
+.label, .badge { font-weight: 600; }
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+strong, em, th, thead { font-weight: 600; }

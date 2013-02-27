@@ -1,0 +1,50 @@
+@imports "compass";
+@import "general/mixin-helpers";
+
+/* big labels */
+.big-label {
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+
+  background-color: $mediumGray;
+  border: 1px solid darken($mediumGray, 5);
+  @include border-radius(4px);
+  text-align: center;
+
+  i {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    font-size: 1.5em;
+    color: #333;
+    @include whiteTextShadow();
+  }
+
+  &.light-blue { @include big-label($lightBlue); }
+  &.medium-blue { @include big-label($mediumBlue); }
+  &.text-blue { @include big-label($textBlue); }
+  &.dark-blue { @include big-label($darkBlue); }
+  &.dark-plum { @include big-label($darkPlum); }
+
+  &.yellow { @include big-label($yellow); }
+  &.orange { @include big-label($orange); }
+  &.red { @include big-label($red); }
+  &.plum { @include big-label($plum); }
+  &.blue { @include big-label($blue); }
+  &.turquoise { @include big-label($turquoise); }
+  &.green { @include big-label($green); }
+  &.inverse { @include big-label(#444); }
+
+  &.text-inverse {
+    i {
+      color: #eee;
+      @include blackTextShadow();
+    }
+  }
+}
+
+.big-label.round {
+  @include border-radius(30px);
+}

@@ -1,0 +1,272 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.recent-comments {
+  width: 100%;
+
+  .comment-box {
+    min-height: 110px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid $lightGray;
+    @include border-radius(5px);
+    margin-top: 6px;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      @include border-radius(5px);
+      @include insetShadow();
+      padding: 15px;
+      margin: 5px 10px;
+      background-size: 100%;
+      &.user1 { background-image: image-url("users/user1.png"); }
+      &.user2 { background-image: image-url("users/user2.png"); }
+      &.user3 { background-image: image-url("users/user3.png"); }
+      &.user4 { background-image: image-url("users/user4.png"); }
+      &.user5 { background-image: image-url("users/user5.png"); }
+      &.user6 { background-image: image-url("users/user6.png"); }
+      &.user7 { background-image: image-url("users/user7.png"); }
+    }
+
+    .article {
+      margin-left: 100px;
+
+      .post-info {
+        color: $mediumBlue;
+        font-weight: 600;
+        font-size: 10px;
+        margin-left: 10px;
+      }
+
+      .post-content-preview {
+        color: #333;
+        margin: 3px 10px;
+      }
+
+      .article-actions {
+        margin-left: 10px;
+      }
+    }
+
+    &:hover { background-color: lighten($lightGray, 3); }
+  }
+
+  .view-more {
+    min-height: 24px;
+    border: none;
+    background-color: #fff;
+    &:hover { background-color: lighten($lightGray, 3); }
+  }
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Recent activity */
+.recent-activity {
+  width: 100%;
+
+  .event-box {
+    width: 100%;
+    min-height: 72px;
+    background: #fff;
+    padding: 6px;
+    border-bottom: 1px dotted $lightGray;
+    &:first-child { border-top: 1px dotted $lightGray; }
+
+    .user-avatar {
+      width: 50px;
+      height: 50px;
+      @include border-radius(5px);
+      @include insetShadow();
+      padding: 15px;
+      margin: 5px 10px;
+
+      background-size: 100%;
+      &.user1 { background-image: image-url("users/user1.png"); }
+      &.user2 { background-image: image-url("users/user2.png"); }
+      &.user3 { background-image: image-url("users/user3.png"); }
+      &.user4 { background-image: image-url("users/user4.png"); }
+      &.user5 { background-image: image-url("users/user5.png"); }
+      &.user6 { background-image: image-url("users/user6.png"); }
+      &.user7 { background-image: image-url("users/user7.png"); }
+    }
+
+    .event {
+      margin-left: 65px;
+      margin-top: 5px;
+
+      a.username {
+        color: $mediumBlue;
+        font-weight: 600;
+      }
+
+      .action {
+        color: #333;
+        margin: 2px 10px;
+      }
+
+      .time {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: .9em;
+        font-weight: 600;
+        line-height: 14px;
+        color: rgba(0, 0, 0, .4);
+        i { font-size: 14px; }
+      }
+    }
+
+    &:hover { background-color: lighten($lightGray, 2); }
+  }
+
+  .view-more {
+    min-height: 24px;
+    border: none;
+    background-color: #fff;
+    &:hover { background-color: lighten($lightGray, 2); }
+  }
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* todos */
+ul.task-list {
+  width: 100%;
+
+  > li.task-box.completed {
+    background-color: lighten($lightBlue, 15);
+    .task { text-decoration:line-through; }
+  }
+
+  > li.task-box {
+    height: 32px;
+    min-height: 20px;
+    padding: 5px;
+    border-bottom: 1px dotted $lightGray;
+    &:first-child { border-top: 1px dotted $lightGray; }
+    color: #777;
+    font-weight: 600;
+
+    .check {
+      float: left;
+      font-size: 1.5em;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .task {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .priority {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+
+  > li.view-all {
+    min-height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #fff;
+    &:hover { background-color: lighten($lightGray, 2); }
+  }
+}
+
+/* Stat-box */
+.stat-box {
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+  margin: 4px auto;
+  display: inline-block;
+
+  background-color: $lightGray;
+  text-align: center;
+  color: #fff;
+  @include blackTextShadow();
+  @include border-radius(3px);
+
+  i {
+    padding: 0;
+    font-size: 2em;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .icon-large:before {
+    margin-top: 15px;
+  }
+
+  .count {
+    font-size: 2em;
+    padding-left: 5px;
+    font-weight: 600;
+    line-height: 2.5em;
+  }
+
+  .stat-text {
+    display: block;
+    font-size: 1.2em;
+    margin-top: -5px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: 600;
+  }
+
+  &.light-blue {
+    @include stat-box($lightBlue);
+  }
+  &.medium-blue {
+    @include stat-box($mediumBlue);
+  }
+  &.text-blue {
+    @include stat-box($textBlue);
+  }
+  &.border-blue {
+    @include stat-box($borderBlue);
+  }
+  &.dark-blue {
+    @include stat-box($darkBlue);
+  }
+  &.dark-plum {
+    @include stat-box($darkPlum);
+  }
+
+  &.yellow {
+    @include stat-box($yellow);
+  }
+  &.orange {
+    @include stat-box($orange);
+  }
+  &.red {
+    @include stat-box($red);
+  }
+  &.plum {
+    @include stat-box($plum);
+  }
+  &.blue {
+    @include stat-box($blue);
+  }
+  &.turquoise {
+    @include stat-box($turquoise);
+  }
+  &.green {
+    @include stat-box($green);
+  }
+  &.inverse {
+    @include stat-box(#444);
+  }
+
+  &.text-inverse {
+    color: #555;
+    @include whiteTextShadow();
+  }
+}

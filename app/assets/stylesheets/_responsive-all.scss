@@ -1,0 +1,9 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+@media (min-width: 980px) {
+  .collapsible-nav {
+    .btn-navbar { display: none; }
+    a#sidebar-brand { display: none;}
+  }
+}

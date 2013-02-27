@@ -1,0 +1,209 @@
+@import "compass";
+$experimental-support-for-svg: true;
+
+/* Extra colors */
+$yellow: #F0C22E;
+$orange: #FF8330;
+$red: #DB3535;
+$plum: #CA6EFF;
+$blue: #2191ED;
+$turquoise: #39c5aa;
+$green: #63A822;
+/* end extra colors */
+
+/* Main blues - main shades of blue */
+$lightBlue: #aad7ea;
+$mediumBlue: #67a0be;
+$borderBlue: #7998aa;
+$darkBlue: #50769b;
+$textBlue: #33566a;
+$darkPlum: #6c5e6d;
+/* end blues */
+
+/* Shades of gray */
+$lightGray: #eee;
+$mediumLightGray: #ccc;
+$mediumGray: #aaa;
+$mediumDarkGray: #999;
+$darkGray: #777;
+/* end grays */
+
+$twitter-blue: #4099FF;
+$facebook-blue: #3b5998;
+
+.twitter-blue { color: $twitter-blue; }
+.facebook-blue { color: $facebook-blue; }
+
+/* Basic 1 argument gradient */
+@mixin basicGrad($color) {
+  background: $color;
+  @include background-image(linear-gradient(top, lighten($color, 5%), darken($color, 5%)));
+}
+
+/* Background color helper classes */
+.red {
+  background: $red;
+  @include basicGrad($red);
+}
+.orange {
+  background: $orange;
+  @include basicGrad($orange);
+}
+.yellow {
+  background: $yellow;
+  @include basicGrad($yellow);
+}
+.green {
+  background: $green;
+  @include basicGrad($green);
+}
+.blue {
+  background: $blue;
+  @include basicGrad($blue);
+}
+.plum {
+  background: $plum;
+  @include basicGrad($plum);
+}
+.turquoise {
+  background: $turquoise;
+  @include basicGrad($turquoise);
+}
+
+/** Blue ************/
+.light-blue {
+  background: $lightBlue;
+  @include basicGrad($lightBlue);
+}
+.medium-blue {
+  background: $mediumBlue;
+  @include basicGrad($mediumBlue);
+}
+.dark-blue {
+  background: $darkBlue;
+  @include basicGrad($darkBlue);
+}
+.text-blue {
+  background: $textBlue;
+  @include basicGrad($textBlue);
+}
+.dark-plum {
+  background: $darkPlum;
+  @include basicGrad($darkPlum);
+}
+
+/** Gray ************************/
+.light-gray {
+  background: $lightGray;
+  @include basicGrad($lightGray);
+}
+
+.medium-light-gray {
+  background: $mediumLightGray;
+  @include basicGrad($mediumLightGray);
+}
+
+.medium-gray {
+  background: $mediumGray;
+  @include basicGrad($mediumGray);
+}
+
+.medium-dark-gray {
+  background: $mediumDarkGray;
+  @include basicGrad($mediumDarkGray);
+}
+
+.dark-gray {
+  background: $darkGray;
+  @include basicGrad($darkGray);
+}
+
+/**** Text color helpers ****/
+.red-text { color: $red; }
+.orange-text { color: $orange; }
+.yellow-text { color: $yellow; }
+.green-text { color: $green; }
+.blue-text { color: $blue; }
+.plum-text { color: $plum; }
+.turquoise-text { color: $turquoise; }
+/**** Blues ****/
+.light-blue-text { color: $lightBlue; }
+.medium-blue-text { color: $mediumBlue; }
+.dark-blue-text { color: $darkBlue; }
+.text-blue-text { color: $textBlue; }
+.dark-plum-text { color: $darkPlum; }
+/**** Grays ****/
+.light-gray-text { color: $lightGray; }
+.medium-light-gray-text { color: $mediumLightGray; }
+.medium-gray-text { color: $mediumGray; }
+.medium-dark-gray-text { color: $mediumDarkGray; }
+.dark-gray-text { color: $darkGray; }
+
+/* Common text shadows - black and white */
+@mixin blackTextShadow() {
+  @include text-shadow(0px 1px 0px rgba(0, 0, 0, 0.5));
+}
+@mixin whiteTextShadow() {
+  @include text-shadow(0px 1px 0px rgba(255, 255, 255, 0.5));
+}
+
+@mixin blackInsetTextShadow() {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .6), 0 0 1px rgba(0, 0, 0, .3);
+}
+@mixin whiteInsetTextShadow() {
+  @include text-shadow(0px 0px -2px rgba(255, 255, 255, 0.5));
+}
+
+/* Box shadows */
+@mixin boxShadow() {
+  @include box-shadow(0px 0px 1px 1px rgba(0, 0, 0, .3));
+}
+
+@mixin insetShadow() {
+  @include box-shadow(inset 0px 0px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Define a standard linear gradient */
+@mixin bgGrad($color1, $color2) {
+  background: $color2;
+  @include background-image(linear-gradient(top, $color1, $color2));
+}
+
+/* Bottom text shadow */
+@mixin text-shadow-bottom($color) {
+  @include text-shadow(0 1px rgba($color, 0.5));
+}
+
+/* Mixins for elements colors */
+
+@mixin alert($color) {
+  background: lighten($color, 35%);
+  border-color: lighten($color, 32%);
+  color: darken($color, 15%);
+}
+
+@mixin big-label($color) {
+  background: $color;
+  border: 1px solid darken($color, 5);
+}
+
+@mixin stat-box($color) {
+  background: $color;
+  border: 1px solid darken($color, 5);
+
+  &:hover {
+    background: darken($color, 3);
+  }
+}
+
+@mixin box($color) {
+  background: $color;
+  border: 1px solid darken($color, 5);
+}
+
+.text-transparent {
+  color: rgba(0, 0, 0, .2);
+  @include blackInsetTextShadow();
+}
+
+.strong { font-weight: 600; }

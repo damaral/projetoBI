@@ -1,0 +1,132 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+@media (max-width: 979px) {
+  .comment-container {
+    height: 250px;
+  }
+
+  .collapsible-nav {
+    width: 100%;
+    height: 40px;
+    margin-top: 0px;
+    background-color: #333;
+    background: image-url("patterns/low_linen.png");
+    border-bottom: 1px solid #333;
+
+    .btn-navbar {
+      float:right;
+      margin: 6px 10px;
+      padding: 5px 10px;
+      i { vertical-align: top; }
+    }
+  }
+
+  .top-bar {
+    ul.top-notifications { width: 75%; }
+    background-color: #333;
+    background: image-url("patterns/low_linen.png");
+    position: relative;
+  }
+
+  a#topbar-brand { display: none; }
+  a#sidebar-brand {
+    @include transition(all .5s linear);
+    float: left;
+    display: block;
+    margin-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+
+    &:hover, &:active, &.active {
+      color: #fff;
+    }
+  }
+
+  .nav-collapse.collapse.in { display: block;}
+  nav.main-nav > ul > li:first-child { border-top: none; }
+
+  nav#primary {
+    float: none;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #262626;
+    overflow: visible;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1000;
+
+    > ul {
+      width: 100%;
+      background: #333;
+      background-image: image-url("patterns/low_linen.png");
+    }
+
+    .dropdown {
+      position: relative;
+      z-index: 1;
+    }
+
+    > ul > li {
+      &:first-child { border-top: none; }
+
+      > a {
+        &:hover {
+          background: rgba(0,0,0,.1);
+        }
+      }
+
+      &.bottom a {
+        position: static;
+      }
+    }
+  }
+
+  ul.secondary {
+    border: 1px solid #333;
+
+    > li > a {
+      text-align: center;
+      color: #eee;
+      font-size: 1em;
+      padding-left: 0px;
+    }
+
+    &.dropdown-menu {
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+      @include text-shadow(rgba(0, 0, 0, 0.4) 0 1px 0);
+      @include border-radius(5px);
+      @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 2px inset,rgba(255, 255, 255, 0.1) 0 1px 0);
+    }
+  }
+
+  section#main {
+    overflow: visible;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .big-button {
+    width: 90px;
+    height: 80px;
+    .button-text { line-height: 16px; }
+  }
+
+  .big-button i {
+    width: 36px;
+    line-height: 28px;
+    font-size: 24px;
+  }
+}

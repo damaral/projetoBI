@@ -1,15 +1,45 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
-// GO AFTER THE REQUIRES BELOW.
-//
-//= require jquery
-//= require jquery_ujs
-//= require_tree .
+//= require jquery182
+//= require jquery-ui
+//= require bootstrap
+//= require chosen.jquery
+//= require jquery.uniform
+//= require jquery.knob
+//= require jquery.piety
+//= require jquery.simplePagination
+
+//= require jquery.gritter
+//= require notifications
+
+//= require maps/jquery-jvectormap
+//= require maps/world-map
+//= require maps/map-init
+
+//= require faq
+//= require docs
+
+//= require sliders
+//= require circles
+
+//= require load-image
+
+//= require extensions/bootstrap-tags
+//= require tags
+//= require extensions/bootstrap-modalmanager
+//= require extensions/bootstrap-modal
+//= require extensions/bootstrap-datepicker
+//= require extensions/bootstrap-image-gallery
+//= require dataTables/jquery.dataTables
+
+//= require flot/jquery.flot
+//= require flot/jquery.flot.resize
+//= require flot/jquery.flot.pie
+//= require charts
+
+//= require fullcalendar/fullcalendar
+//= require fullcalendar/data
+//= require fullcalendar/gcal
+
+//= require justgage/raphael.2.1.0.min
+//= require justgage/justgage
+//= require gauges
+//= require ie-hacks

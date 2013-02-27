@@ -1,0 +1,46 @@
+@import "compass";
+@import "general/mixin-helpers";
+$experimental-support-for-svg: true;
+
+/* Buttons mixins */
+@mixin button-disabled($base) {
+  background: adjust-saturation(lighten($base, 10), -5);
+  @include text-shadow(none);
+  border: 1px solid lighten($base, 5);
+  cursor: default;
+
+  &:hover, &:active {
+    background: adjust-saturation(lighten($base, 10), -5);
+    @include box-shadow(none);
+  }
+}
+
+@mixin button-color($base) {
+  color: lighten($base, 50);
+  @include text-shadow(rgba(#000, 0.5) 0 0 1px);
+  @include bgGrad(lighten($base, 8), $base);
+  border: 1px solid darken($base, 4);
+
+  &.inverse {
+    color: darken($base, 50);
+    @include whiteTextShadow();
+  }
+
+  &.inset {
+    @include text-shadow(rgba(#fff, 0.5) 0 -1px 1px);
+  }
+
+  &.disabled {
+    @include button-disabled($base);
+  }
+
+  &:hover {
+    @include bgGrad(lighten($base, 4), darken($base,4));
+  }
+
+  &:active {
+    @include bgGrad(darken($base,9), darken($base,2));
+  }
+}
+
+/* End Buttons Mixins */

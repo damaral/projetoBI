@@ -1,0 +1,31 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+ul.breadcrumbs {
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+
+  > li {
+    display: inline-block;
+    line-height: 30px;
+
+    a.crumb {
+      padding: 0px 2px;
+      font-weight: 400;
+      font-size: 1em;
+      color: rgba(0, 0, 0, .4);
+      @include whiteTextShadow();
+
+      &.active, &:active, &:hover {
+        color: $mediumBlue;
+      }
+    }
+
+    .divider {
+      color: rgba(0, 0, 0, .3);
+      @include whiteTextShadow();
+      padding: 0px 2px;
+    }
+  }
+}

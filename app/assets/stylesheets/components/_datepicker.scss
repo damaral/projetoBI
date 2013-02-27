@@ -1,0 +1,38 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+/* Datepicker */
+.datepicker td.active, .datepicker td.active:hover {
+  background: $mediumBlue;
+  @include bgGrad(lighten($mediumBlue, 5%), darken($mediumBlue, 8%));
+}
+
+.datepicker th.switch {
+  color: $darkBlue;
+  @include whiteTextShadow();
+}
+.datepicker th.dow  {
+  color: $mediumBlue;
+  @include whiteTextShadow();
+}
+
+.datepicker.dropdown-menu {
+  width: 240px;
+  min-width: 200px;
+  text-align: center;
+  margin-left: -140px;
+
+  &:before, &:after {
+    margin-left: 145px;
+  }
+}
+
+.datepicker td span {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  &.active {
+    background: $mediumBlue;
+    @include bgGrad(lighten($mediumBlue, 5%), darken($mediumBlue, 8%));
+  }
+}

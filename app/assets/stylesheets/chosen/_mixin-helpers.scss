@@ -1,0 +1,18 @@
+@import "compass";
+$experimental-support-for-svg: true;
+
+@mixin std-bg($color1, $color2) {
+  background: $color2;
+  @include background-image(linear-gradient(top, $color1, $color2));
+  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+  @content;
+  }
+
+  &:-moz-placeholder {
+  @content;
+  }
+}

@@ -1,0 +1,114 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.table.no-border {
+  border: none;
+
+  tr, td, thead, th, tfoot, tbody { border: none; }
+}
+
+.table {
+  margin-bottom: 0px;
+  th, thead { font-weight: 600; }
+}
+
+/* DataTables */
+div.dataTables_filter {
+  margin-top: 10px;
+  display: block;
+  label {
+    float: left;
+  }
+
+  label {
+    margin-left: 10px;
+  }
+
+  input {
+    padding: 0;
+    line-height: 25px;
+    height: 25px;
+    width: 150px;
+  }
+}
+
+div.dataTables_wrapper .fg-toolbar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dataTables_length {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  select {
+    padding: 0;
+    line-height: 22px;
+    height: 22px;
+    margin-top: 2px;
+  }
+}
+
+.dataTables_wrapper {
+  table {
+    border-bottom: 1px solid #DDD;
+  }
+
+  .fg-toolbar {
+    @include clearfix;
+  }
+
+  .ui-widget-header {
+    background: #fff;
+    border: none;
+    padding: 0;
+  }
+}
+
+.DataTables_sort_icon {
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+div.dataTables_paginate {
+  float: none;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  display: block;
+  text-align: center;
+
+  a {
+    padding: 4px 8px;
+    margin-left: -3px;
+  }
+
+  .first {
+    @include border-radius(4px 0 0 4px);
+  }
+
+  .last {
+    @include border-radius(0 4px 4px 0);
+  }
+
+  .ui-state-default {
+    font-weight: normal;
+    @include whiteTextShadow();
+  }
+
+  .ui-state-disabled, .ui-state-disabled:hover {
+    background: #ddd;
+    cursor: default;
+    margin-left: 3px;
+    @include text-shadow(none);
+  }
+}
+
+th.ui-state-default {
+  border: none;
+  background: #fff;
+  font-weight: 600;
+  color: $textBlue;
+  @include whiteTextShadow();
+}

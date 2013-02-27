@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <%= partial "/partials/components/tables/dynamic_table" %>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="box bordered" style="position:relative;">
+        <div class="box-header" >
+          <i class="icon-info-sign"></i> Countries
+        </div>
+        <%= partial "/partials/components/tables/countries_table" %>
+      </div>
+    </div>
+
+    <div class="span6">
+      <div class="box bordered" style="position:relative;">
+        <div class="box-header" >
+          <i class="icon-user"></i> eBooks
+        </div>
+        <%= partial "/partials/components/tables/ebooks_table" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span5">
+      <div class="box bordered" style="position:relative;">
+        <div class="box-header" >
+          <i class="icon-info-sign"></i> Account stats
+        </div>
+
+        <%= partial "/partials/components/tables/account_stats_table" %>
+      </div>
+    </div>
+
+    <div class="span7">
+      <div class="box bordered">
+        <div class="box-header">
+          <icon class="icon-table"></icon>  Browser Stats
+        </div>
+        <%= partial "/partials/components/tables/browser_stats_table" %>
+      </div>
+    </div>
+  </div>
+</div>

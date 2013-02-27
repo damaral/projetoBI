@@ -1,0 +1,158 @@
+<nav id="primary" class="main-nav collapsible-nav">
+  <!-- Brand -->
+  <a id="sidebar-brand" href="../pages/dashboard.html">
+    Whitemin
+  </a>
+  <button type="button" class="btn btn-navbar btn-inverse" data-toggle="collapse" data-target=".nav-collapse">
+    <i class="icon-reorder"></i>
+  </button>
+
+  <ul class="nav-collapse collapse">
+
+  <!-- Profile -->
+    <li class="profile">
+      <a href="#profile-opts" class="accordion-toggle" data-toggle="collapse">
+         <img class="avatar user3">
+          <span class="text" id="profile-text">
+            Usuário Teste <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="profile-opts" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "profile-settings") %>">
+          <a href="#">
+            Configurações
+          </a>
+        </li>
+        <li class="<%= nav_active(secondary: "change-pass") %>">
+          <a href="#">
+            Trocar Senha
+          </a>
+        </li>
+        <li class="<%= nav_active(secondary: "logout") %>">
+          <a href="#">
+            Sair
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Dashboard -->
+    <li class="<%= nav_active(primary: "dashboard") %>">
+      <% link_to "/pages/dashboard.html", relative: true do %>
+          <span class="icon">
+            <i class="icon-dashboard"></i>
+          </span>
+          <span class="text">
+            Dashboard
+          </span>
+      <% end %>
+    </li>
+
+    <li class="<%= nav_active(primary: "components") %>">
+      <a href="#components-list" class="accordion-toggle" data-toggle="collapse">
+          <span class="icon">
+            <i class="icon-group"></i>
+          </span>
+          <span class="text">
+            RH <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="components-list" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "buttons") %>">
+          <a href="">Projeções</a>
+        </li>
+        <li class="<%= nav_active(secondary: "forms") %>">
+          <a href="">Relatório KPI's</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="<%= nav_active(primary: "samples") %>">
+      <a href="#sample-pages" class="accordion-toggle" data-toggle="collapse">
+          <span class="icon">
+            <i class="icon-money"></i>
+          </span>
+          <span class="text">
+            Financeiro <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="sample-pages" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "gallery") %>">
+          <a href="">Demostrativo</a>
+        </li>
+        <li class="<%= nav_active(secondary: "faq") %>">
+          <a href="">Relatório KPI's</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="<%= nav_active(primary: "extras") %>">
+      <a href="#extras" class="accordion-toggle" data-toggle="collapse">
+          <span class="icon">
+            <i class="icon-desktop"></i>
+          </span>
+          <span class="text">
+            Portal de Estágios <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="extras" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "fullcalendar") %>">
+          <a href="">Relatório Empresas</a>
+        </li>
+        <li class="<%= nav_active(secondary: "icons") %>">
+          <a href="">Relatório Estagiários</a>
+        </li>
+        <li class="<%= nav_active(secondary: "world-map") %>">
+            <a href="">Relatórios KPI's</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="<%= nav_active(primary: "crm-marketings") %>">
+      <a href="#crm-marketings" class="accordion-toggle" data-toggle="collapse">
+          <span class="icon">
+            <i class="icon-comment-alt"></i>
+          </span>
+          <span class="text">
+            CRM e Marketing <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="crm-marketings" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "fullcalendar") %>">
+          <a href="">Segmentação</a>
+        </li>
+        <li class="<%= nav_active(secondary: "icons") %>">
+          <a href="">CLV</a>
+        </li>
+        <li class="<%= nav_active(secondary: "world-map") %>">
+            <a href="">Relatórios KPI's</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="<%= nav_active(primary: "suporte") %>">
+      <a href="#suporte" class="accordion-toggle" data-toggle="collapse">
+          <span class="icon">
+            <i class="icon-wrench"></i>
+          </span>
+          <span class="text">
+            Suporte <b class="caret"></b>
+          </span>
+      </a>
+
+      <ul id="suporte" class="collapse secondary">
+        <li class="<%= nav_active(secondary: "fullcalendar") %>">
+          <a href="">Gastos</a>
+        </li>
+        <li class="<%= nav_active(secondary: "world-map") %>">
+            <a href="">Relatórios KPI's</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>

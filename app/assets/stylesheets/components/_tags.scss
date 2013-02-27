@@ -1,0 +1,70 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.tag-list {
+  min-width: 200px;
+  min-height: 30px !important;
+  height: 100% !important;
+  line-height: 20px;
+  left:2px;
+  top:2px;
+  position:relative;
+}
+
+.tag-data {
+  display:none;
+}
+
+input.tags-input { padding-bottom: 6px; }
+
+.tags-input {
+  width:100%;
+  min-height: 30px !important;
+  height: 100% !important;
+  font-size:12px !important;
+  margin:0;
+}
+
+.tags {
+  width:inherit;
+  height:0;
+  position:absolute;
+  padding:0;
+  margin:0;
+}
+
+.tag {
+  padding: 1px 3px;
+  margin: 3px;
+  float:left;
+  line-height: 20px;
+}
+
+.tag a {
+  color: $lightGray;
+  cursor:pointer;
+  opacity: .5;
+}
+
+ul.tags-suggestion-list {
+  width:100%;
+  height: auto;
+  list-style:none;
+  margin:0;
+  margin-top: -5px;
+  position:absolute;
+  z-index:2;
+  max-height:220px;
+  overflow-y: scroll;
+}
+li.tags-suggestion {
+  padding:3px 20px;
+  height:auto;
+}
+
+li.tags-suggestion-highlighted {
+  color: white;
+  text-decoration: none;
+  background-color: $darkBlue;
+  @include bgGrad($darkBlue, $mediumBlue);
+}

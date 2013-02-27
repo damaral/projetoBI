@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProjetoBI</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= "Módulo do BI" %></title>
 
-<%= yield %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
+  <%= javascript_include_tag "application.js" %>
+
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!-- there's an IE separated stylesheet with the following resets for IE -->
+  <!--[if lte IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <%= javascript_include_tag "html5shiv.js" %>
+        <%= javascript_include_tag "excanvas.js" %>
+        <%= javascript_include_tag "ie_fix.js" %>
+        <%= stylesheet_link_tag "ie_fix" %>
+  <![endif]-->
+</head>
+
+<body>
+<%= render :partial => "partials/app_ui/sidebar" %>
+<%= render :partial => "partials/app_ui/top-bar" %>
+
+<section id="main">
+  <%= render :partial => "partials/app_ui/breadcrumbs" %>
+  <%= yield %>
+  <%= render :partial => "partials/app_ui/footer" %>
+</section>
+
+
+<!-- Modal dialog used for the image gallery -->
+<div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h3 class="modal-title"></h3>
+  </div>
+  <div class="modal-body"><div class="modal-image"></div></div>
+  <div class="modal-footer">
+    <a class="btn modal-download light-blue inverse" target="_blank"><i class="icon-download"></i> Download</a>
+    <a class="btn modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+    <a class="btn modal-prev medium-blue"><i class="icon-arrow-left icon-white"></i> Previous</a>
+    <a class="btn modal-next medium-blue">Next <i class="icon-arrow-right icon-white"></i></a>
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,212 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.full-width {
+  width: 100%;
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+.uneditable-input {
+  height: 30px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  &.dark {
+    background-color: lighten(#333, 3);
+    border-color: darken(#333, 2);
+    color: #eee;
+  }
+
+  &.input-transparent {
+    @include box-shadow(inset 0px 0px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.2));
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: #fff;
+    @include blackTextShadow();
+    font-size: 100%;
+    padding: 5px 10px;
+  }
+}
+
+.well.dark {
+  background-color: #444;
+  border-color: darken(#333, 2);
+  color: #fff;
+}
+
+label { font-size: 12px; }
+textarea { min-height: 80px; }
+
+.input-append, .input-prepend {
+  width: 100%;
+  input {
+    height: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .add-on {
+    height: 100%;
+    @include bgGrad(#fefefe, $lightGray);
+    @include whiteTextShadow();
+  }
+}
+
+.input {
+  position: relative;
+
+  .input-error {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: $red;
+    i { font-size: 16px; }
+  }
+
+  .input-warning {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: $orange;
+    i { font-size: 16px; }
+  }
+
+  .input-success {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    color: $green;
+    i { font-size: 16px; }
+  }
+
+  input {
+    &.warning, &.warning:focus { border-color: $orange; @include box-shadow(none);}
+    &.error, &.error:focus { border-color: $red; @include box-shadow(none); }
+    &.success, &.success:focus { border-color: $green; @include box-shadow(none);}
+  }
+}
+
+/* Search append, prepend buttons */
+.form-search { .input-append .add-on, .input-append .btn, .input-prepend .add-on, .input-prepend .btn  { margin-bottom: 5px; } }
+.input-append .add-on, .input-append .btn, .input-prepend .add-on, .input-prepend .btn {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* file uploader */
+div.uploader {
+  width: 100%;
+  height: 28px;
+  margin-bottom: 6px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  @include border-radius(3px);
+
+  input {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  span.filename {
+    width: 120px;
+    height: 24px;
+    margin: 2px 0px 2px 2px;
+
+    line-height: 24px;
+    border-right: none;
+  }
+
+  span.action {
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin: 2px 2px 2px 0px;
+
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    background: $mediumGray;
+    @include border-radius(2px);
+    @include text-shadow(none);
+
+    i {
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+div.uploader:hover span.action {
+  background: $mediumDarkGray;
+  background-size: 100%;
+}
+
+//fix for uniformjs/bootstrap radios
+input[type="radio"],
+input[type="checkbox"]
+{
+  margin: -2px 0 0 0;
+  cursor: pointer;
+}
+
+.radio, .checkbox { padding-left:0; }
+label.radio {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: 0px;
+}
+
+div.checker { margin-top: -4px; }
+div.radio { margin-top: -2px; }

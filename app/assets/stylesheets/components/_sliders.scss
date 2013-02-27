@@ -1,0 +1,111 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.ui-slider {
+  margin: 15px;
+  height: 8px;
+
+  .ui-slider-handle {
+    background: $lightGray;
+    width: 1em;
+    height: 1em;
+    @include basicGrad($lightGray);
+    border: 1px solid darken($lightGray, 10%);
+
+    &:hover, &:active {
+      background: darken($lightGray, 5%);
+      @include basicGrad(darken($lightGray, 5%));
+    }
+  }
+}
+
+.ui-widget-header {
+  @include border-radius(5px);
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  outline: 0;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus, .ui-widget-content
+.ui-state-focus, .ui-widget-header .ui-state-focus {
+  outline: 0;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+  outline: 0;
+}
+
+/*Vertical sliders */
+.slider-vertical {
+  height: 200px;
+  width: 8px;
+  margin: 15px 10px;
+  display: inline-block;
+}
+
+/* Sliders - COLORS */
+.slider-red .ui-widget-header {
+  background: $red;
+  @include basicGrad($red);
+}
+
+.slider-orange .ui-widget-header {
+  background: $orange;
+  @include basicGrad($orange);
+}
+
+.slider-yellow .ui-widget-header {
+  background: $yellow;
+  @include basicGrad($yellow);
+}
+
+.slider-green .ui-widget-header {
+  background: $green;
+  @include basicGrad($green);
+}
+
+.slider-blue .ui-widget-header {
+  background: $blue;
+  @include basicGrad($blue);
+}
+
+.slider-plum .ui-widget-header {
+  background: $plum;
+  @include basicGrad($plum);
+}
+
+.slider-turquoise .ui-widget-header {
+  background: $turquoise;
+  @include basicGrad($turquoise);
+}
+
+.slider-light-blue .ui-widget-header {
+  background: $lightBlue;
+  @include basicGrad($lightBlue);
+}
+
+.slider-medium-blue .ui-widget-header {
+  background: $mediumBlue;
+  @include basicGrad($mediumBlue);
+}
+.slider-dark-blue .ui-widget-header {
+  background: $darkBlue;
+  @include basicGrad($darkBlue);
+}
+.slider-text-blue .ui-widget-header {
+  background: $textBlue;
+  @include basicGrad($textBlue);
+}
+.slider-dark-plum .ui-widget-header {
+  background: $darkPlum;
+  @include basicGrad($darkPlum);
+}

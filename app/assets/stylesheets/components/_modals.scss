@@ -1,0 +1,12 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.modal {
+  border: 1px solid darken($lightGray, 9);
+}
+.modal-header {
+  background: lighten($lightGray, 3);
+  border-bottom: 1px solid darken($lightGray, 5);
+  @include border-top-left-radius(5px);
+  @include border-top-right-radius(5px);
+}

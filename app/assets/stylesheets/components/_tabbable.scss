@@ -1,0 +1,27 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.nav-tabs {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.dark {
+  .nav-tabs {
+    border-bottom: 1px solid darken(#333, 3);
+    > li > a {
+      &:hover {
+        background: darken(#333, 3);
+        border: 1px solid darken(#333, 3);
+      }
+    }
+  }
+
+  .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    color: #eee;
+    background-color: #444;
+    @include bgGrad(#444, #333);
+    border: 1px solid darken(#333, 3);
+    border-bottom-color: #333;
+  }
+}

@@ -1,0 +1,66 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.progress {
+  height: 10px;
+}
+
+.progress-red .bar {
+  background-color-color: $red;
+  @include basicGrad($red);
+}
+
+.progress-orange .bar {
+  background-color: $orange;
+  @include basicGrad($orange);
+}
+
+.progress-yellow .bar {
+  background-color: $yellow;
+  @include basicGrad($yellow);
+}
+
+.progress-green .bar {
+  background-color: $green;
+  @include basicGrad($green);
+}
+
+.progress-blue .bar {
+  background-color: $blue;
+  @include basicGrad($blue);
+}
+
+.progress-plum .bar {
+  background-color: $plum;
+  @include basicGrad($plum);
+}
+
+.progress-turquoise .bar {
+  background-color: $turquoise;
+  @include basicGrad($turquoise);
+}
+
+.progress-light-blue .bar {
+  background-color: $lightBlue;
+  @include basicGrad($lightBlue);
+}
+
+.progress-medium-blue .bar {
+  background-color: $mediumBlue;
+  @include basicGrad($mediumBlue);
+}
+
+.progress-dark-blue .bar {
+  background-color: $darkBlue;
+  @include basicGrad($darkBlue);
+}
+
+.progress-text-blue .bar {
+  background-color: $textBlue;
+  @include basicGrad($textBlue);
+}
+
+.progress-dark-plum .bar {
+  background-color: $darkPlum;
+  @include basicGrad($darkPlum);
+}

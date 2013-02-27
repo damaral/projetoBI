@@ -1,0 +1,10 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.gauge {
+  width: 210px;
+  height: 140px;
+  display: inline-block;
+}
+
+.chart { margin: 10px auto; }

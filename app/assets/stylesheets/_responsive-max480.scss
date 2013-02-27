@@ -1,0 +1,51 @@
+@import "compass";
+
+@media (max-width: 480px) {
+  .chart { height: 150px; }
+
+  body { overflow-y: auto; }
+
+  #gritter-notice-wrapper {
+    position:fixed;
+    top:90px;
+    right:8px;
+  }
+
+  .top-bar { ul.top-notifications { width: 100%; } }
+  .recent-comments .comment-box .article .article-actions { margin-left: -65px; }
+  .login-container { width: 100%; }
+  .login-container .title {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  .chart { max-height: 180px; }
+  .percent-stat { padding: 10px; }
+
+  .pricing-plans {
+    .header {
+      margin: 20px auto;
+      .tagline { font-size: 3.5em; margin-bottom: 5px; }
+      .subtitle { font-size: 1.5em; }
+    }
+  }
+
+  .box .section-title { margin-top: 5px; }
+
+  .login-container {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .title { padding-bottom: 0px; }
+  }
+
+  .audience-progress { display: none; }
+
+  .gauge {
+    width: 170px;
+    height: 120px;
+    display: inline-block;
+  }
+
+  .padded { padding: 8px 16px; }
+}

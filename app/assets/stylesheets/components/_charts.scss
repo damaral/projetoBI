@@ -1,0 +1,12 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+.chart {
+  width: 100%;
+  height: 300px;
+  min-height: 150px;
+}
+
+td.legendLabel {
+  padding-left: 4px;
+}

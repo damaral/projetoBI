@@ -1,0 +1,88 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+
+
+      <div class="row-fluid">
+        <div class="span5">
+          <div class="box bordered">
+            <div class="box-header">
+              <i class="icon-comments"></i> Tasks
+            </div>
+            <%= partial "/partials/components/widgets/task_list" %>
+          </div>
+        </div>
+
+        <div class="span7">
+          <div class="box bordered">
+            <div class="box-header">
+              <i class="icon-inbox"></i> Audience stats
+            </div>
+            <div class="padded center">
+              <%= partial "/partials/sample_pages/reports/audience_alt" %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span7">
+          <div class="box bordered">
+            <div class="box-header">
+              <i class="icon-comments"></i> Latest comments
+            </div>
+            <div class="padded10">
+              <%= partial "/partials/components/widgets/comments" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="span5">
+          <div class="box bordered">
+            <div class="box-header">
+              <i class="icon-tags"></i> User activity
+            </div>
+            <%= partial "/partials/components/widgets/recent_activity" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="box bordered">
+            <div class="box-header">
+              <i class="icon-tasks"></i> Tabbed content
+            </div>
+            <div class="row-fluid">
+              <div class="span12">
+                <%= partial "/partials/components/widgets/tabbable" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="span6">
+          <div class="box bordered dark">
+            <div class="box-header">
+              <i class="icon-tasks"></i> Tabbed content - dark
+            </div>
+            <div class="row-fluid">
+              <div class="span12">
+                <%= partial "/partials/components/widgets/tabbable_black" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span6">
+          <%= partial "/partials/components/widgets/white_box" %>
+        </div>
+        <div class="span6">
+          <%= partial "/partials/components/widgets/black_box" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

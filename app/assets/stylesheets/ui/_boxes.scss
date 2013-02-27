@@ -1,0 +1,183 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+/* box */
+.box {
+  height: 100%;
+  background: transparent;
+  margin: 10px auto 5px auto;
+  padding: 0;
+  line-height: 20px;
+
+  .heading {
+    &.h1 { font-size: 1.5em; }
+    &.h2 { font-size: 1.2em; }
+    &.h3 { font-size: 1em; }
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: rgba(0, 0, 0, .4);
+    border-bottom: 1px solid $lightGray;
+  }
+
+  .note {
+    font-size: 10px;
+    line-height: 20px;
+    color: #999;
+    @include text-shadow(0 1px rgba(255, 255, 255, 0.5));
+    i {
+      font-size: 14px;
+      vertical-align: middle;
+    }
+  }
+
+  .box-header {
+    height: 45px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 20px;
+
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+
+    color: rgba(51, 86, 106, .5);
+    @include blackInsetTextShadow();
+    .dropdown-menu li > a { @include text-shadow(none); }
+  }
+
+  h1, h2, h3, h4, h5, h6 { color: rgba(0, 0, 0, .7); }
+
+  .section-title {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(51, 86, 106, .15);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: rgba(0, 0, 0, .25);
+    @include blackInsetTextShadow();
+  }
+
+  &.white { @include box(#fff); }
+  &.light-blue { @include box($lightBlue); }
+  &.medium-blue { @include box($mediumBlue); }
+  &.text-blue { @include box($textBlue); }
+  &.border-blue { @include box($borderBlue); }
+  &.dark-blue { @include box($darkBlue); }
+  &.dark-plum { @include box($darkPlum); }
+
+  &.light-gray { @include box(#f6f6f6); }
+  &.medium-light-gray { @include box($mediumLightGray); }
+  &.medium-gray { @include box($mediumGray); }
+  &.medium-dark-gray { @include box($mediumDarkGray); }
+  &.dark-gray { @include box($darkGray); }
+
+  &.yellow { @include box($yellow); }
+  &.orange { @include box($orange); }
+  &.red { @include box($red); }
+  &.plum { @include box($plum); }
+  &.blue { @include box($blue); }
+  &.turquoise { @include box($turquoise); }
+  &.green { @include box($green); }
+  &.inverse { @include box(#444); }
+}
+
+/* Bordered box - most frequently used */
+.box.bordered {
+  background-color: #fff;
+  margin: 10px auto 5px auto;
+  padding: 0;
+  border: 1px solid $mediumLightGray;
+  @include border-radius(2px);
+  @include box-shadow(0px 0px 1px 0px rgba(0, 0, 0, .2));
+
+  .box-header {
+    .pull-right {
+      line-height: 22px;
+      text-transform: none;
+
+      .btn-group { font-size: 1em; }
+      .btn-group.open .dropdown-toggle { @include box-shadow(none); }
+      .btn-group > .btn, .btn-group > .dropdown-menu {
+        margin-left: -150px;
+        margin-top: -2px;
+        i { @include text-shadow(none); }
+      }
+
+      i {
+        color: rgba(0, 0, 0, .2);
+        @include blackInsetTextShadow();
+        &:hover, &:active { color: rgba(0, 0, 0, .4); }
+      }
+    }
+  }
+}
+
+/* Dark box */
+.box.bordered.dark {
+  background-color: #333;
+  border: 1px solid darken(#333, 5%);
+  @include box-shadow(0px 0px 5px 0px rgba(0, 0, 0, .3));
+  p, h1, h2, h3, h4, h5, ul li, ol, li { color: #fff; }
+
+  .box-header {
+    background: transparent;
+    color: lighten($textBlue, 45);
+    @include blackTextShadow();
+  }
+}
+
+/* Transparent box */
+.box.transparent {
+  background: rgba(0, 0, 0, .05);
+  @include box-shadow(rgba(0, 0, 0, 0.1) 0 1px 1px inset,rgba(255, 255, 255, 0.4) 0 1px 0);
+  border: 1px solid rgba(0, 0, 0, .1);
+  @include border-radius(2px);
+
+  .box-header {
+    background: transparent;
+    border-bottom: none;
+    color: rgba(0, 0, 0, .4);
+    @include whiteTextShadow();
+
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 700;
+
+    i {
+      margin-right: 5px;
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+
+    .pull-right {
+      margin-right: 10px;
+      i {
+        color: rgba(0, 0, 0, .4);
+        @include whiteTextShadow();
+        font-size: 1.2em;
+        line-height: 1.2em;
+        &:hover, &:active { color: rgba(0, 0, 0, .6); }
+      }
+    }
+  }
+}
+
+/* Box inside another box - no text shadow and such */
+.box.inner {
+  @include border-radius(2px);
+  @include box-shadow(none);
+  padding: 10px;
+  margin: 10px;
+}
+
+.box.inner.dark {
+  background: #333;
+  border: 1px solid darken(#333, 5);
+}

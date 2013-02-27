@@ -1,0 +1,35 @@
+<div class="box bordered icons-list">
+  <div class="box-header">
+    <icon class="icon-flag"></icon> Fontawesome Icons
+  </div>
+
+  <div class="row-fluid padded">
+    <% icons.each_slice(55).to_a.each do |icons_a| %>
+        <div class="span3">
+          <ul>
+            <% icons_a.each do |icon| %>
+                <li style="line-height: 32px;"><i class="icon-large icon-<%= icon %>"></i> icon-<%= icon %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="box bordered open-icons-list">
+  <div class="box-header">
+    <icon class="icon-flag"></icon> OpenWeb Icons
+  </div>
+
+  <div class="row-fluid padded">
+    <% openwebicons.each_slice(15).to_a.each do |icons_b| %>
+        <div class="span3">
+          <ul>
+            <% icons_b.each do |icon| %>
+                <li style="line-height: 32px;"><i class="icon-<%= icon %>"></i> icon-<%= icon %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+  </div>
+</div>

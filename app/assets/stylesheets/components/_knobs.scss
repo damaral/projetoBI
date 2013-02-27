@@ -1,0 +1,37 @@
+@import "compass";
+@import "general/mixin-helpers";
+
+/* Circle stats */
+.percent-stat {
+  padding: 16px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -20px;
+
+  .indicator {
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .3);
+    @include blackInsetTextShadow();
+  }
+
+  .percent {
+    position: relative;
+    top: -50px;
+    left: 85px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $mediumGray;
+    font-weight: bold;
+    background: transparent;
+  }
+
+  .circle-stat {
+    display: inline-block;
+    @include box-shadow(none);
+    &:focus { @include box-shadow(none); }
+  }
+}

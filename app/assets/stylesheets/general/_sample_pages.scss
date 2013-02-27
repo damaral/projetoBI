@@ -1,0 +1,273 @@
+@import "compass";
+@import "mixin-helpers";
+
+/* Image Gallery */
+.gallery {
+  img.thumb {
+    padding: 4px;
+    margin: 3px;
+    background: #fff;
+    @include boxShadow();
+    @include border-radius(3px);
+  }
+}
+
+/* FAQ */
+.faq-questions {
+  list-style-type: none;
+  .faq-number {
+    min-width: 25px;
+    display: inline-block;
+  }
+  li {
+    line-height: 20px;
+  }
+}
+
+.faq-list {
+  list-style-type: none;
+  .faq-number {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .9em;
+    line-height: 28px;
+
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 3px solid $lightGray;
+    @include border-radius(50px);
+
+    color: #fff;
+    @include blackTextShadow();
+    @include boxShadow();
+    background-color: $mediumBlue;
+    @include bgGrad(darken($mediumBlue, 5%), darken($mediumBlue, 9%));
+  }
+}
+.faq-left {
+  margin-top: 5px;
+  .faq-well {
+    margin-top: 10px;
+  }
+}
+/* END FAQ */
+
+/* Pricing Plans */
+.pricing-plans {
+
+  .header {
+    margin: 40px auto;
+    .tagline {
+      font-size: 5em;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .subtitle { font-size: 2em; }
+  }
+
+  .plan-container {
+    width: 100%;
+    max-width: 340px;
+    margin: 10px auto;
+
+    .plan-box.featured {
+      .plan > .plan-price {
+        background: lighten($mediumBlue, 30);
+      }
+    }
+
+    .plan-box {
+      @include border-radius(5px);
+      @include box-shadow(0px 0px 1px 0px rgba(0, 0, 0, .4));
+      border: 1px solid #CCC;
+
+      background:#fff;
+      text-align: center;
+      overflow: hidden;
+
+      .plan {
+        margin: 10px;
+        border: 1px solid darken($lightGray, 4%);
+        @include border-radius(5px);
+
+        .plan-title {
+          height: 50px;
+          line-height: 50px;
+          font-size: 2em;
+          font-weight: 700;
+          border-bottom: 1px solid darken($lightGray, 4%);
+          color: rgba(51, 86, 106, .5);
+          text-transform: uppercase;
+          @include blackInsetTextShadow();
+        }
+
+        .plan-price {
+          font-size: 2.5em;
+          height: 50px;
+          line-height: 50px;
+          color: $mediumBlue;
+          @include whiteTextShadow();
+          background: lighten($lightGray, 2);
+          border-bottom: 1px solid darken($lightGray, 4%);
+
+          span.permonth {
+            padding-left: 5px;
+            font-size: 0.4em;
+          }
+
+          span.dollar {
+            position: relative;
+            top: -11px;
+            left: -2px;
+            display: inline;
+            font-size: 0.4em;
+            line-height: 0.4em;
+          }
+        }
+
+        ul {
+          li {
+            padding: 1em 0;
+            margin: 0 2em;
+            text-align: center;
+          }
+          padding-bottom: 10px;
+          padding-top: 10px;
+          margin: 0;
+          list-style: none;
+        }
+        .plan-actions {
+          padding-bottom: 10px;
+          .purchase-btn { width: 60%; }
+        }
+      }
+    }
+  }
+}
+/* END Pricing Plans */
+
+/* Login page */
+.login-container {
+  width: 330px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+
+  .title {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: right;
+  }
+
+  .login-form {
+    width: 100%;
+    margin-top: 20px;
+
+    .actions {
+      width: 100%;
+      padding: 20px 0;
+      line-height: 40px;
+      .login-btn { width: 100%;}
+    }
+
+    .social-actions {
+      @include clearfix();
+      width: 100%;
+
+      .social-link {
+        float: right;
+        padding: 5px 10px;
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 600;
+      }
+    }
+
+    .fields-list {
+      list-style: none;
+      margin: 0;
+      padding: 0px;
+
+      @include border-radius(4px 4px);
+      @include box-shadow(rgba(0, 0, 0, 0.2) 0 1px 2px inset, rgba(255, 255, 255, 0.4) 0 1px 0);
+      background: rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+
+      li {
+        position: relative;
+        padding: 4px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        &:first-child { border-top: 0px; }
+        &:last-child {
+          @include border-bottom-left-radius(4px);
+          @include border-bottom-right-radius(4px);
+        }
+
+        font-size: 14px;
+        line-height: 18px;
+        @include text-shadow(0 1px 0 rgba(255, 255, 255, .6));
+
+        i {
+          position: absolute;
+          top: 11px;
+          color: #888;
+        }
+
+        input {
+          width: 100%;
+          margin: 0;
+          padding-left: 25px;
+          border: none;
+
+          font-size: 12px;
+          background: transparent;
+          @include box-shadow(none);
+
+          &:focus {  i { color: #444; } }
+        }
+
+        input:-moz-placeholder { @include whiteTextShadow(); }
+        input::-moz-placeholder { @include whiteTextShadow(); }
+        input::-webkit-input-placeholder { @include whiteTextShadow(); }
+        input:-ms-input-placeholder { @include whiteTextShadow(); }
+
+      }
+    }
+  }
+}
+/* end login */
+
+
+/* error page */
+.error-container {
+  width: 500px;
+  min-height: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  padding: 20px;
+
+  .info-text {
+    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 8px 0px;
+  }
+
+  .error-text {
+    font-size: 200px;
+    line-height: 200px;
+    font-weight: 600;
+  }
+
+  .actions {
+    padding: 8px 0px;
+  }
+}
