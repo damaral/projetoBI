@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ddmmyyyy: MyString
+  mmyyyy: MyString
+  dia_ano: 1
+  dia_semana: 1
+  semana_ano: 1
+  mes: 1
+  ano: 1
+  dia: 1
+
+two:
+  ddmmyyyy: MyString
+  mmyyyy: MyString
+  dia_ano: 1
+  dia_semana: 1
+  semana_ano: 1
+  mes: 1
+  ano: 1
+  dia: 1

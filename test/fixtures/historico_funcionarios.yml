@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cargo_antigo: MyString
+  cargo_novo: MyString
+  salario_antigo: 1.5
+  salario_novo: 1.5
+
+two:
+  cargo_antigo: MyString
+  cargo_novo: MyString
+  salario_antigo: 1.5
+  salario_novo: 1.5

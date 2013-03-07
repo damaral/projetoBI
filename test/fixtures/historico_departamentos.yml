@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mes: 1
+  orcamento_previsto: 1.5
+
+two:
+  mes: 1
+  orcamento_previsto: 1.5

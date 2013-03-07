@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: 
+  email: MyString
+  ano_atual: 1
+  ano_previsto_formacao: 1
+
+two:
+  nome: 
+  email: MyString
+  ano_atual: 1
+  ano_previsto_formacao: 1
