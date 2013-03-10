@@ -53752,3 +53752,498 @@ Processing by RhController#relatorio_kpis as JS
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNa3KeGa3K85urKV1pUOT/TUUG/zAaGmHLvDoWEzlnU=", "filtros"=>{"ano"=>"2003"}, "_"=>"1362930030035"}
   Rendered rh/relatorio_kpis.js.erb (0.0ms)
 Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=lNa3KeGa3K85urKV1pUOT%2FTUUG%2FzAaGmHLvDoWEzlnU%3D&filtros%5Bano%5D=2003&_=1362937451817" for 127.0.0.1 at 2013-03-10 14:44:11 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNa3KeGa3K85urKV1pUOT/TUUG/zAaGmHLvDoWEzlnU=", "filtros"=>{"ano"=>"2003"}, "_"=>"1362937451817"}
+  Rendered rh/relatorio_kpis.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=lNa3KeGa3K85urKV1pUOT%2FTUUG%2FzAaGmHLvDoWEzlnU%3D&filtros%5Bano%5D=2004&_=1362937459575" for 127.0.0.1 at 2013-03-10 14:44:19 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNa3KeGa3K85urKV1pUOT/TUUG/zAaGmHLvDoWEzlnU=", "filtros"=>{"ano"=>"2004"}, "_"=>"1362937459575"}
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=lNa3KeGa3K85urKV1pUOT%2FTUUG%2FzAaGmHLvDoWEzlnU%3D&filtros%5Bano%5D=2006&_=1362937718524" for 127.0.0.1 at 2013-03-10 14:48:38 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNa3KeGa3K85urKV1pUOT/TUUG/zAaGmHLvDoWEzlnU=", "filtros"=>{"ano"=>"2006"}, "_"=>"1362937718524"}
+  Rendered rh/relatorio_kpis.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=lNa3KeGa3K85urKV1pUOT%2FTUUG%2FzAaGmHLvDoWEzlnU%3D&filtros%5Bano%5D=2006&_=1362937731595" for 127.0.0.1 at 2013-03-10 14:48:51 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lNa3KeGa3K85urKV1pUOT/TUUG/zAaGmHLvDoWEzlnU=", "filtros"=>{"ano"=>"2006"}, "_"=>"1362937731595"}
+  Rendered rh/relatorio_kpis.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (88.9ms)[0m  [1mTRUNCATE departamentos;[0m
+  [1m[35m (55.5ms)[0m  TRUNCATE historico_departamentos;
+  [1m[36m (55.4ms)[0m  [1mTRUNCATE funcionarios;[0m
+  [1m[35m (66.6ms)[0m  TRUNCATE historico_funcionarios;
+  [1m[36m (66.4ms)[0m  [1mTRUNCATE receitas;[0m
+  [1m[35m (66.3ms)[0m  TRUNCATE despesas;
+  [1m[36m (110.5ms)[0m  [1mTRUNCATE chamados;[0m
+  [1m[35m (66.3ms)[0m  TRUNCATE patrimonios;
+  [1m[36m (66.5ms)[0m  [1mTRUNCATE campanhas;[0m
+  [1m[35m (66.3ms)[0m  TRUNCATE atendimento_clientes;
+  [1m[36m (66.5ms)[0m  [1mTRUNCATE estagios;[0m
+  [1m[35m (66.3ms)[0m  TRUNCATE vagas;
+  [1m[36m (66.4ms)[0m  [1mTRUNCATE estagiarios;[0m
+  [1m[35m (66.4ms)[0m  TRUNCATE processos_seletivos
+  [1m[36m (77.3ms)[0m  [1mTRUNCATE calendarios[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '012013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (69.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '022013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (71.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '032013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (63.4ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '042013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (75.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '052013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (75.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '062013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '072013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (52.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '082013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (52.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '092013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (52.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '102013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (52.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '112013', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (51.9ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '122013', NULL, '2013-03-10 18:04:11')
+  [1m[36m (53.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:11', NULL, NULL, NULL, NULL, NULL, NULL, '012012', NULL, '2013-03-10 18:04:11')[0m
+  [1m[35m (48.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '022012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (49.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '032012', NULL, '2013-03-10 18:04:12')[0m
+  [1m[35m (52.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '042012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (51.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '052012', NULL, '2013-03-10 18:04:12')[0m
+  [1m[35m (52.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '062012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (63.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '072012', NULL, '2013-03-10 18:04:12')[0m
+  [1m[35m (51.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '082012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (50.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '092012', NULL, '2013-03-10 18:04:12')[0m
+  [1m[35m (53.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '102012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (53.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '112012', NULL, '2013-03-10 18:04:12')[0m
+  [1m[35m (52.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-10 18:04:12', NULL, NULL, NULL, NULL, NULL, NULL, '122012', NULL, '2013-03-10 18:04:12')
+  [1m[36m (52.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-10 18:04:12', 2, NULL, NULL, NULL, 'Func 1', '2013-03-10 18:04:12')[0m
+  [1m[35m (56.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-10 18:04:12', 3, NULL, NULL, NULL, 'Func 2', '2013-03-10 18:04:12')
+  [1m[36m (51.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-10 18:04:12', 4, NULL, NULL, NULL, 'Func 3', '2013-03-10 18:04:12')[0m
+  [1m[35m (53.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-10 18:04:12', 5, NULL, NULL, NULL, 'Func 4', '2013-03-10 18:04:12')
+  [1m[36m (53.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-10 18:04:12', '2013-03-10 18:04:12', 55.38)[0m
+  [1m[35m (37.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-10 18:04:12', '2013-03-10 18:04:12', 83.07000000000001)
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 110.76)[0m
+  [1m[35m (40.1ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 138.45000000000002)
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 166.14000000000001)[0m
+  [1m[35m (42.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 193.83)
+  [1m[36m (41.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 221.52)[0m
+  [1m[35m (42.4ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 249.21)
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 276.90000000000003)[0m
+  [1m[35m (41.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 304.59000000000003)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 332.28000000000003)[0m
+  [1m[35m (40.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 359.97)
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 387.66)[0m
+  [1m[35m (41.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 415.35)
+  [1m[36m (41.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 443.04)[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 470.73)
+  [1m[36m (41.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 498.42)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 526.11)
+  [1m[36m (40.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 553.8000000000001)[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 581.49)
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 609.1800000000001)[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 636.87)
+  [1m[36m (53.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 664.5600000000001)[0m
+  [1m[35m (41.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-10 18:04:13', '2013-03-10 18:04:13', 692.25)
+  [1m[36m (42.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 719.94)[0m
+  [1m[35m (53.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 747.63)
+  [1m[36m (41.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 775.32)[0m
+  [1m[35m (52.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 803.01)
+  [1m[36m (52.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 830.7)[0m
+  [1m[35m (52.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 858.39)
+  [1m[36m (51.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 886.08)[0m
+  [1m[35m (53.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 913.7700000000001)
+  [1m[36m (330.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 941.46)[0m
+  [1m[35m (204.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 969.1500000000001)
+  [1m[36m (51.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-10 18:04:14', '2013-03-10 18:04:14', 996.84)[0m
+  [1m[35m (52.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1024.53)
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1052.22)[0m
+  [1m[35m (62.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1079.91)
+  [1m[36m (53.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1107.6000000000001)[0m
+  [1m[35m (53.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1135.29)
+  [1m[36m (52.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1162.98)[0m
+  [1m[35m (51.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1190.67)
+  [1m[36m (51.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1218.3600000000001)[0m
+  [1m[35m (51.8ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1246.05)
+  [1m[36m (53.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1273.74)[0m
+  [1m[35m (53.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1301.43)
+  [1m[36m (52.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1329.1200000000001)[0m
+  [1m[35m (52.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1356.8100000000002)
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1384.5)[0m
+  [1m[35m (52.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1412.19)
+  [1m[36m (52.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1439.88)[0m
+  [1m[35m (52.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-10 18:04:15', '2013-03-10 18:04:15', 1467.5700000000002)
+  [1m[36m (52.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1495.26)[0m
+  [1m[35m (51.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1522.95)
+  [1m[36m (53.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1550.64)[0m
+  [1m[35m (53.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1578.3300000000002)
+  [1m[36m (52.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1606.02)[0m
+  [1m[35m (53.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1633.71)
+  [1m[36m (50.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1661.4)[0m
+  [1m[35m (49.7ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1689.0900000000001)
+  [1m[36m (53.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1716.78)[0m
+  [1m[35m (53.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1744.47)
+  [1m[36m (53.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1772.16)[0m
+  [1m[35m (53.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1799.8500000000001)
+  [1m[36m (62.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1827.5400000000002)[0m
+  [1m[35m (77.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1855.23)
+  [1m[36m (42.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1882.92)[0m
+  [1m[35m (41.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1910.6100000000001)
+  [1m[36m (41.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1938.3000000000002)[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1965.99)
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-10 18:04:16', '2013-03-10 18:04:16', 1993.68)[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2021.3700000000001)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2049.06)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2076.75)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2104.44)[0m
+  [1m[35m (40.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2132.13)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2159.82)[0m
+  [1m[35m (40.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2187.51)
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2215.2000000000003)[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2242.8900000000003)
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2270.58)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2298.27)
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2325.96)[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2353.65)
+  [1m[36m (41.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2381.34)[0m
+  [1m[35m (40.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2409.03)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2436.7200000000003)[0m
+  [1m[35m (42.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2464.4100000000003)
+  [1m[36m (42.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2492.1)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2519.79)
+  [1m[36m (49.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2547.48)[0m
+  [1m[35m (63.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2575.17)
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-10 18:04:17', '2013-03-10 18:04:17', 2602.86)[0m
+  [1m[35m (42.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2630.55)
+  [1m[36m (53.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2658.2400000000002)[0m
+  [1m[35m (52.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2685.9300000000003)
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2713.6200000000003)[0m
+  [1m[35m (51.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2741.31)
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2769.0)[0m
+  [1m[35m (50.6ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2796.69)
+  [1m[36m (53.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2824.38)[0m
+  [1m[35m (53.7ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2852.07)
+  [1m[36m (64.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2879.76)[0m
+  [1m[35m (63.1ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2907.4500000000003)
+  [1m[36m (53.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2935.1400000000003)[0m
+  [1m[35m (51.8ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2962.83)
+  [1m[36m (53.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 2990.52)[0m
+  [1m[35m (52.2ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 3018.21)
+  [1m[36m (53.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 3045.9)[0m
+  [1m[35m (53.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-10 18:04:18', '2013-03-10 18:04:18', 3073.59)
+  [1m[36m (52.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3101.28)[0m
+  [1m[35m (52.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3128.9700000000003)
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3156.6600000000003)[0m
+  [1m[35m (51.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3184.3500000000004)
+  [1m[36m (51.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3212.04)[0m
+  [1m[35m (53.4ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3239.73)
+  [1m[36m (53.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3267.42)[0m
+  [1m[35m (64.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3295.11)
+  [1m[36m (51.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3322.8)[0m
+  [1m[35m (51.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-10 18:04:19', '2013-03-10 18:04:19', 3350.4900000000002)
+  [1m[36m (53.6ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-10 15:07:29 -0300
+Served asset /rails.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
