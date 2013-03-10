@@ -34,6 +34,7 @@
 //= require flot/jquery.flot.resize
 //= require flot/jquery.flot.pie
 //= require charts
+//= require charts_google
 
 //= require fullcalendar/fullcalendar
 //= require fullcalendar/data

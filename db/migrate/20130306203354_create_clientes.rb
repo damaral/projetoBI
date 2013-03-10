@@ -5,8 +5,11 @@ class CreateClientes < ActiveRecord::Migration
       t.string :email
       t.string :tipo_cliente
       t.string :cnpj
+      t.references :campanha
 
       t.timestamps
     end
+
+    add_index :clientes, :campanha_id
   end
 end

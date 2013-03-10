@@ -9,6 +9,7 @@ class CreateCalendarios < ActiveRecord::Migration
       t.integer :mes
       t.integer :ano
       t.integer :dia
+      t.date :data
 
       t.timestamps
     end

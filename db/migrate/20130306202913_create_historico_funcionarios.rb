@@ -5,8 +5,11 @@ class CreateHistoricoFuncionarios < ActiveRecord::Migration
       t.string :cargo_novo
       t.float :salario_antigo
       t.float :salario_novo
+      t.references :funcionario
 
       t.timestamps
     end
+
+    add_index :historico_funcionarios, :funcionario_id
   end
 end
