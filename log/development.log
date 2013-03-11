@@ -54247,3 +54247,1569 @@ Connecting to database specified by database.yml
 Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-10 15:07:29 -0300
 Served asset /rails.png - 304 Not Modified (2ms)
 Connecting to database specified by database.yml
+
+
+Started GET "/home/index" for 127.0.0.1 at 2013-03-11 07:14:55 -0300
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered partials/components/widgets/_stat_boxes.html.erb (1.2ms)
+  Rendered partials/sample_pages/reports/_audience_alt.html.erb (1.4ms)
+  Rendered partials/components/tables/_countries_table.html.erb (4.4ms)
+  Rendered partials/components/elements/_quick_links.html.erb (1.2ms)
+  Rendered partials/components/widgets/_task_list.html.erb (0.6ms)
+  Rendered partials/components/widgets/_comments.html.erb (0.5ms)
+  Rendered partials/components/widgets/_recent_activity.html.erb (0.6ms)
+  Rendered partials/extras/_fullcalendar_with_events.html.erb (0.4ms)
+  Rendered pages/_dashboard.html.erb (75.1ms)
+  Rendered home/index.html.erb within layouts/application (131.3ms)
+Compiled application.js  (47ms)  (pid 2180)
+  Rendered partials/app_ui/_sidebar.html.erb (4.6ms)
+  Rendered partials/app_ui/_top-bar.html.erb (1.2ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.4ms)
+  Rendered partials/app_ui/_footer.html.erb (0.4ms)
+Completed 200 OK in 1742ms (Views: 1741.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /jquery-ui.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:58 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /notifications.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /tags.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/charts_google.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /charts_google.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /maps/map-init.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /docs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /sliders.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /faq.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery182.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /maps/world-map.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /gauges.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /charts.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /circles.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /bootstrap.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery.knob.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /ie-hacks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /jquery.piety.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /load-image.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 07:14:59 -0300
+Served asset /application.js - 200 OK (119ms)
+
+
+Started GET "/assets/patterns/whitey_light.png" for 127.0.0.1 at 2013-03-11 07:15:00 -0300
+Served asset /patterns/whitey_light.png - 304 Not Modified (28ms)
+
+
+Started GET "/assets/patterns/low_linen.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /patterns/low_linen.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/users/user3.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user3.png - 304 Not Modified (74ms)
+
+
+Started GET "/assets/flags/Sweden.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Sweden.png - 304 Not Modified (10ms)
+
+
+Started GET "/assets/flags/Germany.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Germany.png - 304 Not Modified (12ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /fontawesome-webfont.woff - 304 Not Modified (17ms)
+
+
+Started GET "/assets/sprite.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /sprite.png - 304 Not Modified (43ms)
+
+
+Started GET "/assets/flags/Spain.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Spain.png - 304 Not Modified (18ms)
+
+
+Started GET "/assets/flags/Romania.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Romania.png - 304 Not Modified (21ms)
+
+
+Started GET "/assets/flags/Italy.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Italy.png - 304 Not Modified (31ms)
+
+
+Started GET "/assets/flags/Finland.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /flags/Finland.png - 304 Not Modified (22ms)
+
+
+Started GET "/assets/users/user2.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user2.png - 304 Not Modified (27ms)
+
+
+Started GET "/assets/users/user7.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user7.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users/user5.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user5.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users/user1.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user1.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users/user4.png" for 127.0.0.1 at 2013-03-11 07:15:01 -0300
+Served asset /users/user4.png - 304 Not Modified (7ms)
+
+
+Started GET "/rh/relatorio_kpis" for 127.0.0.1 at 2013-03-11 07:15:07 -0300
+Processing by RhController#relatorio_kpis as HTML
+  [1m[36mCalendario Load (0.7ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.5ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.4ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.5ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.4ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.5ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.4ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.html.erb within layouts/application (320.9ms)
+  Rendered partials/app_ui/_sidebar.html.erb (0.7ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 583ms (Views: 413.8ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:08 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /charts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/charts_google.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /charts_google.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-11 07:15:09 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=&_=1362996924389" for 127.0.0.1 at 2013-03-11 07:15:24 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>""}, "_"=>"1362996924389"}
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.6ms)
+Completed 200 OK in 37ms (Views: 28.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=&_=1362996936270" for 127.0.0.1 at 2013-03-11 07:15:36 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>""}, "_"=>"1362996936270"}
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2006&_=1362997218854" for 127.0.0.1 at 2013-03-11 07:20:18 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2006"}, "_"=>"1362997218854"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.6ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 3.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/rh/relatorio_kpis" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Processing by RhController#relatorio_kpis as HTML
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.html.erb within layouts/application (3.3ms)
+  Rendered partials/app_ui/_sidebar.html.erb (0.7ms)
+  Rendered partials/app_ui/_top-bar.html.erb (0.0ms)
+  Rendered partials/app_ui/_breadcrumbs.html.erb (0.0ms)
+  Rendered partials/app_ui/_footer.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 61.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery182.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery182.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/chosen.jquery.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /chosen.jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.uniform.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery.uniform.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery.knob.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.piety.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery.piety.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.simplePagination.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery.simplePagination.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.gritter.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /jquery.gritter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notifications.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /notifications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/jquery-jvectormap.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /maps/jquery-jvectormap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/world-map.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /maps/world-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps/map-init.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /maps/map-init.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/faq.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /faq.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/docs.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /docs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sliders.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /sliders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/circles.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /circles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/load-image.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /load-image.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-tags.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /extensions/bootstrap-tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /tags.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modalmanager.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /extensions/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /extensions/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-datepicker.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /extensions/bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/extensions/bootstrap-image-gallery.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /extensions/bootstrap-image-gallery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /dataTables/jquery.dataTables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /flot/jquery.flot.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.resize.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /flot/jquery.flot.resize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flot/jquery.flot.pie.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /flot/jquery.flot.pie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts_google.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /charts_google.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /charts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/fullcalendar/fullcalendar.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /fullcalendar/fullcalendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/data.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /fullcalendar/data.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fullcalendar/gcal.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /fullcalendar/gcal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/raphael.2.1.0.min.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /justgage/raphael.2.1.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/justgage/justgage.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /justgage/justgage.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gauges.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /gauges.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ie-hacks.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /ie-hacks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 08:04:58 -0300
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=&_=1362999900553" for 127.0.0.1 at 2013-03-11 08:05:00 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>""}, "_"=>"1362999900553"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 3.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2012&_=1363000607881" for 127.0.0.1 at 2013-03-11 08:16:47 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2012"}, "_"=>"1363000607881"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.8ms)
+Completed 200 OK in 26ms (Views: 6.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2013&_=1363000614055" for 127.0.0.1 at 2013-03-11 08:16:54 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2013"}, "_"=>"1363000614055"}
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2013&_=1363000628311" for 127.0.0.1 at 2013-03-11 08:17:08 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2013"}, "_"=>"1363000628311"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 4.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2013&_=1363000686117" for 127.0.0.1 at 2013-03-11 08:18:06 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2013"}, "_"=>"1363000686117"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '01'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '02'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '03'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '04'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '05'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '06'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '07'[0m
+  [1m[35mCalendario Load (0.3ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '08'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '09'[0m
+  [1m[35mCalendario Load (0.1ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '10'
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '11'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '12'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 6.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2013&_=1363000707551" for 127.0.0.1 at 2013-03-11 08:18:27 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2013"}, "_"=>"1363000707551"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012013'[0m
+  [1m[35mReceita Load (0.6ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 1
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 2
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 3
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 4
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 5
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 6
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 7
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 8
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 9
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 10
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 11
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 12
+  Rendered rh/relatorio_kpis.js.erb (0.2ms)
+Completed 200 OK in 259ms (Views: 7.2ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2012&_=1363000715882" for 127.0.0.1 at 2013-03-11 08:18:35 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2012"}, "_"=>"1363000715882"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012012'[0m
+  [1m[35mReceita Load (0.3ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 13
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022012'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 14
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032012'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 15
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 16
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 17
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 18
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 19
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 20
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 21
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 22
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 23
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 24
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 5.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2008&_=1363000736266" for 127.0.0.1 at 2013-03-11 08:18:56 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2008"}, "_"=>"1363000736266"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012008'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022008'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032008'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042008'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052008'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062008'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072008'[0m
+  [1m[35mCalendario Load (0.2ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082008'
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092008'[0m
+  [1m[35mCalendario Load (0.5ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102008'
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112008'[0m
+  [1m[35mCalendario Load (0.4ms)[0m  SELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122008'
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 4.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2012&_=1363000741258" for 127.0.0.1 at 2013-03-11 08:19:01 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2012"}, "_"=>"1363000741258"}
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 13
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 14
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 15
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042012'[0m
+  [1m[35mReceita Load (0.2ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 16
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 17
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 18
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 19
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 20
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 21
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 22
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 23
+  [1m[36mCalendario Load (36.6ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122012'[0m
+  [1m[35mReceita Load (0.3ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 24
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 4.0ms | ActiveRecord: 39.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (125.3ms)[0m  [1mTRUNCATE departamentos;[0m
+  [1m[35m (99.9ms)[0m  TRUNCATE historico_departamentos;
+  [1m[36m (99.6ms)[0m  [1mTRUNCATE funcionarios;[0m
+  [1m[35m (99.7ms)[0m  TRUNCATE historico_funcionarios;
+  [1m[36m (99.9ms)[0m  [1mTRUNCATE receitas;[0m
+  [1m[35m (99.4ms)[0m  TRUNCATE despesas;
+  [1m[36m (99.6ms)[0m  [1mTRUNCATE chamados;[0m
+  [1m[35m (99.6ms)[0m  TRUNCATE patrimonios;
+  [1m[36m (99.7ms)[0m  [1mTRUNCATE campanhas;[0m
+  [1m[35m (99.6ms)[0m  TRUNCATE atendimento_clientes;
+  [1m[36m (99.7ms)[0m  [1mTRUNCATE estagios;[0m
+  [1m[35m (177.3ms)[0m  TRUNCATE vagas;
+  [1m[36m (99.6ms)[0m  [1mTRUNCATE estagiarios;[0m
+  [1m[35m (77.5ms)[0m  TRUNCATE processos_seletivos
+  [1m[36m (55.5ms)[0m  [1mTRUNCATE calendarios[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '012013', NULL, '2013-03-11 11:25:25')[0m
+  [1m[35m (73.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '022013', NULL, '2013-03-11 11:25:25')
+  [1m[36m (51.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '032013', NULL, '2013-03-11 11:25:25')[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '042013', NULL, '2013-03-11 11:25:25')
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '052013', NULL, '2013-03-11 11:25:25')[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '062013', NULL, '2013-03-11 11:25:25')
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:25', NULL, NULL, NULL, NULL, NULL, NULL, '072013', NULL, '2013-03-11 11:25:25')[0m
+  [1m[35m (40.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '082013', NULL, '2013-03-11 11:25:26')
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '092013', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '102013', NULL, '2013-03-11 11:25:26')
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '112013', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2013, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '122013', NULL, '2013-03-11 11:25:26')
+  [1m[36m (38.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '012012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (84.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '022012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (39.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '032012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '042012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (41.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '052012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '062012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (42.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '072012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (41.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '082012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '092012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '102012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '112012', NULL, '2013-03-11 11:25:26')[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `calendarios` (`ano`, `created_at`, `data`, `ddmmyyyy`, `dia`, `dia_ano`, `dia_semana`, `mes`, `mmyyyy`, `semana_ano`, `updated_at`) VALUES (2012, '2013-03-11 11:25:26', NULL, NULL, NULL, NULL, NULL, NULL, '122012', NULL, '2013-03-11 11:25:26')
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-11 11:25:26', 14, NULL, NULL, NULL, 'Func 1', '2013-03-11 11:25:26')[0m
+  [1m[35m (49.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-11 11:25:26', 16, NULL, NULL, NULL, 'Func 2', '2013-03-11 11:25:26')
+  [1m[36m (43.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-11 11:25:27', 4, NULL, NULL, NULL, 'Func 3', '2013-03-11 11:25:27')[0m
+  [1m[35m (30.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `funcionarios` (`cargo_atual`, `created_at`, `data_admissao_id`, `data_demissao_id`, `departamento_id`, `motivo_demissao`, `nome`, `updated_at`) VALUES (NULL, '2013-03-11 11:25:27', 5, NULL, NULL, NULL, 'Func 4', '2013-03-11 11:25:27')
+  [1m[36m (41.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 20.339703665668086)[0m
+  [1m[35m (42.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 22.926768963200473)
+  [1m[36m (39.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 15.891881533312398)[0m
+  [1m[35m (38.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 21.320212645287107)
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (1, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 11.183365483948815)[0m
+  [1m[35m (53.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 22.468364178151933)
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 2.7522087532363044)[0m
+  [1m[35m (41.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 13.288553646995092)
+  [1m[36m (52.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 9.420696908667479)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (2, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 25.885186079370243)
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 24.239392882425115)[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 0.27887330487167605)
+  [1m[36m (39.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 4.666282164277387)[0m
+  [1m[35m (50.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 24.01440531538219)
+  [1m[36m (39.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (3, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 26.273406376550113)[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 17.006300570389655)
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 18.622239177594217)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 26.332578354597178)
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-11 11:25:27', '2013-03-11 11:25:27', 18.909023725222482)[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (4, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 16.45958965684089)
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 8.305386044055183)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 21.023818722607693)
+  [1m[36m (40.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 17.682942034120146)[0m
+  [1m[35m (42.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 24.440888908213463)
+  [1m[36m (41.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (5, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 4.4083232454648575)[0m
+  [1m[35m (38.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 23.631055585409655)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 14.374405892469131)[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 12.000002503272542)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 12.960670135777319)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (6, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 11.939406923469638)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 6.953512469509445)[0m
+  [1m[35m (40.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 10.94415799108943)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 17.77644496847794)[0m
+  [1m[35m (41.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 14.611241793242188)
+  [1m[36m (38.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (7, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 20.112076785903767)[0m
+  [1m[35m (41.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 11.416951507826614)
+  [1m[36m (41.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 8.943256940746117)[0m
+  [1m[35m (41.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 7.818296398967401)
+  [1m[36m (41.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 8.388072761151802)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (8, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 20.153624525085473)
+  [1m[36m (53.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 3.8989001523357008)[0m
+  [1m[35m (40.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-11 11:25:28', '2013-03-11 11:25:28', 11.481327098990644)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 1.1683861338131931)[0m
+  [1m[35m (40.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 24.261699896600668)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (9, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 6.8674827321171055)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 7.050225452229685)
+  [1m[36m (42.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 22.554371000558312)[0m
+  [1m[35m (39.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 21.21100290586153)
+  [1m[36m (38.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 16.831404742841702)[0m
+  [1m[35m (39.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (10, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 3.5376804709092036)
+  [1m[36m (41.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 11.565522878924126)[0m
+  [1m[35m (40.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 24.838953357078175)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 19.13331430261194)[0m
+  [1m[35m (40.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 21.961677356030364)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (11, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 5.1982741564211965)[0m
+  [1m[35m (40.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 17.830924497154694)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 25.632992497319805)[0m
+  [1m[35m (40.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 25.905311023284266)
+  [1m[36m (39.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 7.7887448710823)[0m
+  [1m[35m (30.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (12, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 3.727000322475312)
+  [1m[36m (29.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 24.277428218807625)[0m
+  [1m[35m (28.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 11.570598823033095)
+  [1m[36m (30.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 26.258231289252915)[0m
+  [1m[35m (28.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 14.263195623461879)
+  [1m[36m (29.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (13, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 25.215876848399464)[0m
+  [1m[35m (30.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-11 11:25:29', '2013-03-11 11:25:29', 4.011873110551064)
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 4.643784139677262)[0m
+  [1m[35m (52.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 12.199063133131968)
+  [1m[36m (31.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 24.579753589205968)[0m
+  [1m[35m (31.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (14, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 8.903862051294709)
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 14.04111768251513)[0m
+  [1m[35m (30.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 11.44751955926972)
+  [1m[36m (30.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 26.389418956846722)[0m
+  [1m[35m (42.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 7.714965058061254)
+  [1m[36m (38.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (15, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 21.544668114707182)[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 7.01876568238536)
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 5.322918642187435)[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 6.5973855710383695)
+  [1m[36m (41.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 25.87911920038075)[0m
+  [1m[35m (41.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (16, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 7.487586724821902)
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 19.19029220086738)[0m
+  [1m[35m (40.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 21.880151565730806)
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 3.77079281077625)[0m
+  [1m[35m (40.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 5.894956580224566)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (17, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 17.484654909671267)[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 3.1764338784660615)
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 9.769916123800748)[0m
+  [1m[35m (42.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 1.7393250525880486)
+  [1m[36m (41.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-11 11:25:30', '2013-03-11 11:25:30', 7.185573566483569)[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (18, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 21.20796951722844)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 18.753261038485554)[0m
+  [1m[35m (40.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 18.67047388017183)
+  [1m[36m (40.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 14.360486389704514)[0m
+  [1m[35m (39.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 8.202072385003248)
+  [1m[36m (51.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (19, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 26.795888490218278)[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 16.266123408719192)
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 3.9095086229208804)[0m
+  [1m[35m (38.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 19.313452145566377)
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 27.116313437317228)[0m
+  [1m[35m (41.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (20, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 25.246920664649174)
+  [1m[36m (41.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 3.090166407925471)[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 11.40920054880808)
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 8.064175752171236)[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 5.012508543721486)
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (21, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 5.462317488980273)[0m
+  [1m[35m (40.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 22.669557485862914)
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 11.106708084287222)[0m
+  [1m[35m (41.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 22.959378720379508)
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 20.677031202494547)[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (22, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 14.59178979265618)
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 13.933667695856833)[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-11 11:25:31', '2013-03-11 11:25:31', 12.254617686367189)
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 7.506711219345053)[0m
+  [1m[35m (41.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 22.106135628509545)
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (23, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 23.671617363102524)[0m
+  [1m[35m (40.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 8.087775448349502)
+  [1m[36m (40.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 0.5717706120895484)[0m
+  [1m[35m (40.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 20.420109879863737)
+  [1m[36m (40.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 7.490380150472188)[0m
+  [1m[35m (40.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `receitas` (`calendario_id`, `cliente_id`, `created_at`, `updated_at`, `valor`) VALUES (24, NULL, '2013-03-11 11:25:32', '2013-03-11 11:25:32', 25.55795367517086)
+  [1m[36m (60.6ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2012&_=1363001141028" for 127.0.0.1 at 2013-03-11 08:25:41 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2012"}, "_"=>"1363001141028"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012012'[0m
+  [1m[35mReceita Load (0.2ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 13
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022012'[0m
+  [1m[35mReceita Load (0.3ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 14
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032012'[0m
+  [1m[35mReceita Load (0.2ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 15
+  [1m[36mCalendario Load (0.6ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 16
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052012'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 17
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 18
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072012'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 19
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082012'[0m
+  [1m[35mReceita Load (0.6ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 20
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 21
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102012'[0m
+  [1m[35mReceita Load (0.6ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 22
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112012'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 23
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122012'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 24
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 5.9ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2013&_=1363001151063" for 127.0.0.1 at 2013-03-11 08:25:51 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2013"}, "_"=>"1363001151063"}
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012013'[0m
+  [1m[35mReceita Load (0.3ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 1
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022013'[0m
+  [1m[35mReceita Load (0.8ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 2
+  [1m[36mCalendario Load (0.6ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 3
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 4
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052013'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 5
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062013'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 6
+  [1m[36mCalendario Load (0.3ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072013'[0m
+  [1m[35mReceita Load (0.4ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 7
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082013'[0m
+  [1m[35mReceita Load (0.6ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 8
+  [1m[36mCalendario Load (0.6ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092013'[0m
+  [1m[35mReceita Load (0.6ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 9
+  [1m[36mCalendario Load (0.5ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 10
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 11
+  [1m[36mCalendario Load (0.4ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122013'[0m
+  [1m[35mReceita Load (0.5ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 12
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 5.9ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/rh/relatorio_kpis?utf8=%E2%9C%93&authenticity_token=7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ%3D&filtros%5Bano%5D=2012&_=1363001170018" for 127.0.0.1 at 2013-03-11 08:26:10 -0300
+Processing by RhController#relatorio_kpis as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7seGpRZmUWPpupmnNfjVURCEl1knmg6ZAnW7qxCF6MQ=", "filtros"=>{"ano"=>"2012"}, "_"=>"1363001170018"}
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '012012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 13
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '022012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 14
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '032012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 15
+  [1m[36mCalendario Load (0.2ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '042012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 16
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '052012'[0m
+  [1m[35mReceita Load (0.2ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 17
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '062012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 18
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '072012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 19
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '082012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 20
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '092012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 21
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '102012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 22
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '112012'[0m
+  [1m[35mReceita Load (0.1ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 23
+  [1m[36mCalendario Load (0.1ms)[0m  [1mSELECT `calendarios`.* FROM `calendarios` WHERE `calendarios`.`mmyyyy` = '122012'[0m
+  [1m[35mReceita Load (0.2ms)[0m  SELECT `receitas`.* FROM `receitas` WHERE `receitas`.`calendario_id` = 24
+  Rendered rh/relatorio_kpis.js.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 3.8ms | ActiveRecord: 3.4ms)

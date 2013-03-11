@@ -2,7 +2,7 @@ class RhController < ApplicationController
   def relatorio_kpis
     puts "PARAMS #{params}"
 
-    ano = params[:ano]
+    ano = params[:filtros][:ano]
 
     receitas = Array.new
 
@@ -19,6 +19,8 @@ class RhController < ApplicationController
         end
       end
     end
+
+    @dados = receitas
 
   end
 end

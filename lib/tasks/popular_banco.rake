@@ -55,8 +55,10 @@ namespace :popular_banco do
     FactoryGirl.create(:funcionario, :nome => "Func 4", :data_admissao => data[4])
 
     data.each do |data|
-        5.times do
-            FactoryGirl.create(:receita, :calendario => data)
+        5.times do |j|
+            rand(j)
+            valor = 27.35*rand
+            FactoryGirl.create(:receita, :calendario => data, :valor => valor)
         end
     end
     
