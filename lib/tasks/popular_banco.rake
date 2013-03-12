@@ -3,63 +3,34 @@
 namespace :popular_banco do
   task :dados_teste => :environment do
 
-    ["departamentos;",
-     "historico_departamentos;",
-     "funcionarios;",
-     "historico_funcionarios;",
-     "receitas;",
-     "despesas;",
-     "chamados;",
-     "patrimonios;",
-     "campanhas;",
-     "atendimento_clientes;",
-     "estagios;",
-     "vagas;",
-     "estagiarios;",
-     "processos_seletivos",
-     "calendarios"].each do |table|
+    ["calendario_meses",
+     "fato_rh_produtividades"].each do |table|
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
-    data = Array.new
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "012013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "022013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "032013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "042013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "052013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "062013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "072013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "082013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "092013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "102013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "112013", :ano => 2013)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "122013", :ano => 2013)
 
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "012012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "022012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "032012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "042012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "052012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "062012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "072012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "082012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "092012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "102012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "112012", :ano => 2012)
-    data.push FactoryGirl.create(:calendario, :mmyyyy => "122012", :ano => 2012)
-    
+    data_mes = Array.new
+    anos = [2009, 2010, 2011, 2012, 2013]
 
-    FactoryGirl.create(:funcionario, :nome => "Func 1", :data_admissao => data[13])
-    FactoryGirl.create(:funcionario, :nome => "Func 2", :data_admissao => data[15])
-    FactoryGirl.create(:funcionario, :nome => "Func 3", :data_admissao => data[3])
-    FactoryGirl.create(:funcionario, :nome => "Func 4", :data_admissao => data[4])
+    anos.each_with_index do |ano, i|
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "01#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "02#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "03#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "04#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "05#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "06#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "07#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "08#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "09#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "10#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "11#{ano}", :ano => ano, :mes => i.next)
+      data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "12#{ano}", :ano => ano, :mes => i.next)
+    end
 
-    data.each do |data|
-        5.times do |j|
-            rand(j)
-            valor = 27.35*rand
-            FactoryGirl.create(:receita, :calendario => data, :valor => valor)
-        end
+    data_mes.each_with_index do |data, j|
+      rand(j)
+      prod = 10000*rand
+      FactoryGirl.create(:fato_rh_produtividade, :calendario_mes => data, :produtividade_real => prod*1.15, :produtividade_total => prod)
     end
     
   end

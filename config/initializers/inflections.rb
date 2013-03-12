@@ -34,5 +34,7 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'processo_seletivo', 'processos_seletivos'
   inflect.irregular 'vaga', 'vagas'
   inflect.irregular 'data', 'datas'
+  inflect.irregular 'fato_produtividade', 'fato_produtividades'
+  inflect.irregular 'calendario_mes', 'calendario_meses'
   #inflect.uncountable %w( fish sheep )
 end

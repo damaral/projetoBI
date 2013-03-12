@@ -11,169 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306204235) do
+ActiveRecord::Schema.define(:version => 20130312105516) do
 
-  create_table "atendimento_clientes", :force => true do |t|
-    t.text     "mensagem_recebida"
-    t.text     "mensagem_enviada"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-  end
-
-  create_table "calendarios", :force => true do |t|
-    t.string   "ddmmyyyy"
+  create_table "calendario_meses", :force => true do |t|
     t.string   "mmyyyy"
-    t.integer  "dia_ano"
-    t.integer  "dia_semana"
-    t.integer  "semana_ano"
     t.integer  "mes"
     t.integer  "ano"
-    t.integer  "dia"
-    t.date     "data"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "campanhas", :force => true do |t|
-    t.string   "tipo"
-    t.string   "nome"
-    t.integer  "despesa_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "fato_rh_produtividades", :force => true do |t|
+    t.float    "receita_total"
+    t.integer  "num_estagiarios"
+    t.integer  "num_funcionarios"
+    t.float    "produtividade_total"
+    t.float    "produtividade_real"
+    t.integer  "calendario_mes_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
-  add_index "campanhas", ["despesa_id"], :name => "index_campanhas_on_despesa_id"
-
-  create_table "chamados", :force => true do |t|
-    t.string   "status"
-    t.integer  "funcionario_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "chamados", ["funcionario_id"], :name => "index_chamados_on_funcionario_id"
-
-  create_table "clientes", :force => true do |t|
-    t.string   "nome"
-    t.string   "email"
-    t.string   "tipo_cliente"
-    t.string   "cnpj"
-    t.integer  "campanha_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  add_index "clientes", ["campanha_id"], :name => "index_clientes_on_campanha_id"
-
-  create_table "departamentos", :force => true do |t|
-    t.string   "nome"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "despesas", :force => true do |t|
-    t.float    "valor"
-    t.text     "descricao"
-    t.integer  "departamento_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
-  add_index "despesas", ["departamento_id"], :name => "index_despesas_on_departamento_id"
-
-  create_table "estagiarios", :force => true do |t|
-    t.string   "nome"
-    t.string   "email"
-    t.integer  "ano_atual"
-    t.integer  "ano_previsto_formacao"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
-  end
-
-  create_table "estagios", :force => true do |t|
-    t.float    "bolsa"
-    t.integer  "estagiario_id"
-    t.integer  "cliente_empresa_id"
-    t.integer  "cliente_instituicao_id"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
-  end
-
-  add_index "estagios", ["cliente_empresa_id"], :name => "index_estagios_on_cliente_empresa_id"
-  add_index "estagios", ["cliente_instituicao_id"], :name => "index_estagios_on_cliente_instituicao_id"
-
-  create_table "funcionarios", :force => true do |t|
-    t.string   "nome"
-    t.text     "motivo_demissao"
-    t.string   "cargo_atual"
-    t.integer  "departamento_id"
-    t.integer  "data_admissao_id"
-    t.integer  "data_demissao_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-  end
-
-  add_index "funcionarios", ["departamento_id"], :name => "index_funcionarios_on_departamento_id"
-
-  create_table "historico_departamentos", :force => true do |t|
-    t.integer  "mes"
-    t.float    "orcamento_previsto"
-    t.integer  "departamento_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-  end
-
-  add_index "historico_departamentos", ["departamento_id"], :name => "index_historico_departamentos_on_departamento_id"
-
-  create_table "historico_funcionarios", :force => true do |t|
-    t.string   "cargo_antigo"
-    t.string   "cargo_novo"
-    t.float    "salario_antigo"
-    t.float    "salario_novo"
-    t.integer  "funcionario_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "historico_funcionarios", ["funcionario_id"], :name => "index_historico_funcionarios_on_funcionario_id"
-
-  create_table "patrimonios", :force => true do |t|
-    t.integer  "despesa_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "patrimonios", ["despesa_id"], :name => "index_patrimonios_on_despesa_id"
-
-  create_table "processos_seletivos", :force => true do |t|
-    t.integer  "estagiario_id"
-    t.integer  "vaga_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "processos_seletivos", ["estagiario_id"], :name => "index_processos_seletivos_on_estagiario_id"
-  add_index "processos_seletivos", ["vaga_id"], :name => "index_processos_seletivos_on_vaga_id"
-
-  create_table "receitas", :force => true do |t|
-    t.float    "valor"
-    t.integer  "cliente_id"
-    t.integer  "calendario_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "receitas", ["calendario_id"], :name => "index_receitas_on_calendario_id"
-  add_index "receitas", ["cliente_id"], :name => "index_receitas_on_cliente_id"
-
-  create_table "vagas", :force => true do |t|
-    t.string   "cargo"
-    t.float    "bolsa"
-    t.integer  "cliente_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "vagas", ["cliente_id"], :name => "index_vagas_on_cliente_id"
+  add_index "fato_rh_produtividades", ["calendario_mes_id"], :name => "index_fato_rh_produtividades_on_calendario_mes_id"
 
 end
