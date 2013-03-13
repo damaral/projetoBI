@@ -14,7 +14,7 @@
             <div class="padded">
               <div class="section-title">Produtividade por Funcionário</div>
               <div style="height: 100px">
-              <%= simple_form_for :filtros, :url => "/rh/relatorio_kpis", :remote => true, :html => {:class => 'span12 form-horizontal filtro_relatorio'} do |f| %>
+              <%= simple_form_for :filtros, :url => "/rh/relatorio_kpis", :remote => true, :html => {:class => 'span12 form-vertical filtro_relatorio'} do |f| %>
                 <%= f.input :ano, :collection => ["2009", "2010", "2011", "2012", "2013"], :required => false, :label => "Ano", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
                 <%= f.button :submit, "Gerar Relatório" %>
               <% end %>
