@@ -41,7 +41,7 @@ namespace :popular_banco do
       prod = 10000*rand
       FactoryGirl.create(:fato_rh_produtividade, :calendario_mes => data, :produtividade_real => prod*1.15, :produtividade_total => prod)
 
-      receita = 100000*rand, 
+      receita = 100000*rand
       FactoryGirl.create(:fato_financeiro_demonstrativo, :calendario_mes => data, :receita_total => receita, :custos_variaveis => receita*0.10,
        :custos_fixos => receita*0.45, :impostos => receita*0.25, :lucro => receita*0.2)
 
