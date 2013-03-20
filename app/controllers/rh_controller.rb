@@ -28,12 +28,18 @@ class RhController < ApplicationController
 
     meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
              "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
-    @dados = Array.new
+    @dados = Hash.new
+    @dados[:produtividade_total] = Hash.new
+    @dados[:produtividade_real] = Hash.new 
 
     meses.each_with_index do |mes, i|
       data = CalendarioMes.find_by_mmyyyy mes
-      @dados[i.next] = data.fato_rh_produtividade.produtividade_total.round(2
-)    end
+      fato_rh_produtividade = data.fato_rh_produtividade
+      @dados[:produtividade_total][i.next] = fato_rh_produtividade.produtividade_total.round(2)
+      @dados[:produtividade_real][i.next] = fato_rh_produtividade.produtividade_real.round(2)
+
+      
+    end
 
   end
 end

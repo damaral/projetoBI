@@ -1,5 +1,17 @@
 <%
-  string_dados = "[['Jan',#{@dados[1]}], ['Fev',#{@dados[2]}], ['Mar',#{@dados[3]}], ['Abr',#{@dados[4]}], ['Mai',#{@dados[5]}], ['Jun',#{@dados[6]}], ['Jul',#{@dados[7]}], ['Ago',#{@dados[8]}], ['Set',#{@dados[9]}], ['Out',#{@dados[10]}], ['Nov',#{@dados[11]}], ['Dez',#{@dados[12]}]]"
+  string_dados = "[['Jan',#{@dados[:produtividade_real][1]}, #{@dados[:produtividade_total][1]}], 
+                   ['Fev',#{@dados[:produtividade_real][2]}, #{@dados[:produtividade_total][2]}], 
+                   ['Mar',#{@dados[:produtividade_real][3]}, #{@dados[:produtividade_total][3]}], 
+                   ['Abr',#{@dados[:produtividade_real][4]}, #{@dados[:produtividade_total][4]}], 
+                   ['Mai',#{@dados[:produtividade_real][5]}, #{@dados[:produtividade_total][5]}], 
+                   ['Jun',#{@dados[:produtividade_real][6]}, #{@dados[:produtividade_total][6]}], 
+                   ['Jul',#{@dados[:produtividade_real][7]}, #{@dados[:produtividade_total][7]}], 
+                   ['Ago',#{@dados[:produtividade_real][8]}, #{@dados[:produtividade_total][8]}], 
+                   ['Set',#{@dados[:produtividade_real][9]}, #{@dados[:produtividade_total][9]}], 
+                   ['Out',#{@dados[:produtividade_real][10]}, #{@dados[:produtividade_total][10]}], 
+                   ['Nov',#{@dados[:produtividade_real][11]}, #{@dados[:produtividade_total][11]}], 
+                   ['Dez',#{@dados[:produtividade_real][12]}, #{@dados[:produtividade_total][12]}]]"
+                   
 %>
 dados = <%= string_dados.html_safe %>;
 drawChartLine(dados);
