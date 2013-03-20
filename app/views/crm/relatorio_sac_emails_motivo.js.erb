@@ -1,0 +1,13 @@
+<%
+	string_dados="["
+	
+	@labels.length.times do |i|
+		string_dados = string_dados + "['#{@labels[i]}',#{@values[i]}],"
+	end
+
+	string_dados = string_dados.slice!(0, string_dados.length - 1)
+  	string_dados = string_dados + "]"
+
+%>
+dados = <%= string_dados.html_safe %>;
+drawChartPie(dados);
