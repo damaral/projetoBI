@@ -32,8 +32,8 @@ class RhController < ApplicationController
 
     meses.each_with_index do |mes, i|
       data = CalendarioMes.find_by_mmyyyy mes
-      @dados[i.next] = data.fato_rh_produtividade.produtividade_total.round(2)
-    end
+      @dados[i.next] = data.fato_rh_produtividade.produtividade_total.round(2
+)    end
 
   end
 end
