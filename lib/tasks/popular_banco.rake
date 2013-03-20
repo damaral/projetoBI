@@ -4,7 +4,10 @@ namespace :popular_banco do
   task :dados_teste => :environment do
 
     ["calendario_meses",
-     "fato_rh_produtividades"].each do |table|
+      "departamentos",
+     "fato_rh_produtividades",
+     "fato_financeiro_demonstrativos",
+     "fato_financeiro_despesas"].each do |table|
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
@@ -27,10 +30,34 @@ namespace :popular_banco do
       data_mes.push FactoryGirl.create(:calendario_mes, :mmyyyy => "12#{ano}", :ano => ano, :mes => i.next)
     end
 
+    departamentos = Array.new
+    departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestão"] 
+     departamentos_nomes.each do |nome|
+      departamentos.push FactoryGirl.create(:departamento, :nome => nome)
+    end
+
     data_mes.each_with_index do |data, j|
       rand(j)
       prod = 10000*rand
       FactoryGirl.create(:fato_rh_produtividade, :calendario_mes => data, :produtividade_real => prod*1.15, :produtividade_total => prod)
+
+      receita = 100000*rand, 
+      FactoryGirl.create(:fato_financeiro_demonstrativo, :calendario_mes => data, :receita_total => receita, :custos_variaveis => receita*0.10,
+       :custos_fixos => receita*0.45, :impostos => receita*0.25, :lucro => receita*0.2)
+
+      departamentos.each_with_index do |departamento, d|
+        
+        salario_total = 50000*rand
+        custo_infraestrutura = 35000*rand
+        custo_treinamento = 15000*rand
+        custo_outros = 20000*rand
+        despesa_total = salario_total + custo_infraestrutura + custo_treinamento + custo_outros
+
+        despesa = 10000*rand
+        FactoryGirl.create(:fato_financeiro_despesa, :calendario_mes => data, :departamento => departamento, :despesa_total => despesa_total,
+          :salario_total => salario_total, :custo_infraestrutura => custo_infraestrutura, :custo_treinamento => custo_treinamento, 
+          :custo_outros => custo_outros)
+      end
     end
     
   end
