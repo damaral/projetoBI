@@ -58,3 +58,29 @@ function drawChartLine(dados) {
   var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
 }
+
+function drawChartColumn(dados) {
+        
+  var data = new google.visualization.DataTable();
+  data.addColumn('string', 'Mês');
+  data.addColumn('number', 'Receita');
+  data.addColumn('number', 'Receita');
+  data.addColumn('number', 'Receita');
+  data.addColumn('number', 'Receita');
+  data.addRows(dados);
+          
+          /*['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);*/
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
