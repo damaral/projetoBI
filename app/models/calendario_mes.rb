@@ -4,4 +4,6 @@ class CalendarioMes < ActiveRecord::Base
   has_one :fato_rh_produtividade
   has_one :fato_financeiro_demonstrativo
   has_many :fato_financeiro_despesas
+  has_many :fato_suporte_tempo_de_atendimentos
+  has_many :fato_suporte_chamados_departamentos
 end

@@ -4,10 +4,13 @@ namespace :popular_banco do
   task :dados_teste => :environment do
 
     ["calendario_meses",
-      "departamentos",
+     "departamentos",
      "fato_rh_produtividades",
      "fato_financeiro_demonstrativos",
-     "fato_financeiro_despesas"].each do |table|
+     "fato_financeiro_despesas",
+     "tipo_chamados",
+     "fato_suporte_chamados_departamentos",
+     "fato_suporte_tempo_de_atendimentos"].each do |table|
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
@@ -36,6 +39,12 @@ namespace :popular_banco do
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
     end
 
+    chamados = Array.new
+    chamado_nomes = ["tipo 1", "tipo 2", "tipo 3", "tipo 4", "tipo 5"]
+    chamado_nomes.each do |nome|
+      chamados.push FactoryGirl.create(:tipo_chamado, :nome => nome)
+    end
+
     data_mes.each_with_index do |data, j|
       rand(j)
       prod = 10000*rand
@@ -57,8 +66,20 @@ namespace :popular_banco do
         FactoryGirl.create(:fato_financeiro_despesa, :calendario_mes => data, :departamento => departamento, :despesa_total => despesa_total,
           :salario_total => salario_total, :custo_infraestrutura => custo_infraestrutura, :custo_treinamento => custo_treinamento, 
           :custo_outros => custo_outros)
+
+        chamados.each_with_index do |nome|
+          num_chamados = 10*rand
+          FactoryGirl.create(:fato_suporte_chamados_departamento, :calendario_mes => data, 
+            :departamento => departamento, :tipo_chamado => nome, :num_chamados => num_chamados)
+
+          t_medio_atendimento = 100*rand
+          n_estourados = rand
+          FactoryGirl.create(:fato_suporte_tempo_de_atendimento, :calendario_mes => data, 
+            :departamento => departamento, :tipo_chamado => nome, :tempo_medio_atendimento => t_medio_atendimento, 
+            :num_chamados_estourados => n_estourados)
+        end
       end
     end
-    
+
   end
 end
