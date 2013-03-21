@@ -43,7 +43,7 @@ class CrmController < ApplicationController
 
     unless params[:filtros].nil?
       ano = params[:filtros][:ano]
-      mes = params[:filtros][:ano][:mes]
+      mes = params[:filtros][:mes]
     else
       ano = Time.now.year
       mes = Time.now.month
@@ -71,10 +71,16 @@ class CrmController < ApplicationController
     @labels = Array.new
     @values = Array.new
 
-    (FatoCrmSac.find_all_by_mmyyyy "#{mes}#{ano}").each_with_index do |fato, i|
+    (CalendarioMes.find_all_by_mmyyyy "#{mes}#{ano}").each_with_index do |mes, i|
+      sacs = mes.fato_crm_sacs
 
-      @labels[i.next] = fato.motivo.nome
-      @values[i.next] = fato.total_emails_recebidos
+      sacs.each_with_index do |sac, j|
+        j.next
+        @labels[j] = sac.motivo.nome
+        @values[j] = sac.total_email_recebidos
+        
+
+      end
 
     end
 
