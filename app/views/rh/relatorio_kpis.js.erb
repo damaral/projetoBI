@@ -11,7 +11,12 @@
                    ['Out',#{@dados[:produtividade_real][10]}, #{@dados[:produtividade_total][10]}], 
                    ['Nov',#{@dados[:produtividade_real][11]}, #{@dados[:produtividade_total][11]}], 
                    ['Dez',#{@dados[:produtividade_real][12]}, #{@dados[:produtividade_total][12]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Prod. Real'],
+                     ['number', 'Prod. Total']]"
                    
 %>
 dados = <%= string_dados.html_safe %>;
-drawChartLine(dados);
+colunas = <%= string_colunas.html_safe %>;
+drawChartLine(dados, colunas);
