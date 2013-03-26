@@ -4,7 +4,8 @@ namespace :popular_banco do
   task :dados_teste => :environment do
 
     ["calendario_meses",
-     "fato_rh_produtividades"].each do |table|
+     "fato_rh_produtividades",
+     "fato_rh_quantidade_funcionarios"].each do |table|
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
