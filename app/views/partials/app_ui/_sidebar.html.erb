@@ -81,7 +81,7 @@
 
       <ul id="sample-pages" class="collapse secondary">
         <li class="<%= nav_active(secondary: "gallery") %>">
-          <a href="">Lucros e Perdas</a>
+          <a href="/financeiro/lucros_perdas">Lucros e Perdas</a>
         </li>
         <li class="<%= nav_active(secondary: "faq") %>">
           <a href="">Despesas Detalhadas</a>
@@ -129,8 +129,11 @@
         <li class="<%= nav_active(secondary: "icons") %>">
           <a href="">CLV</a>
         </li>
-        <li class="<%= nav_active(secondary: "world-map") %>">
-            <a href="">Relatórios KPI's</a>
+        <li class="<%= nav_active(secondary: "forms") %>">
+          <%= link_to "Relatório KPI's", "/crm/relatorio_kpis" %>
+        </li>
+        <li class="<%= nav_active(secondary: "forms") %>">
+          <%= link_to "Relatório SAC", "/crm/relatorio_sac_emails_motivo" %>
         </li>
       </ul>
     </li>
