@@ -34,7 +34,7 @@ namespace :popular_banco do
 
     departamentos = Array.new
     departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestão"] 
-     departamentos_nomes.each do |nome|
+    departamentos_nomes.each do |nome|
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
     end
 
@@ -59,6 +59,9 @@ namespace :popular_banco do
         FactoryGirl.create(:fato_financeiro_despesa, :calendario_mes => data, :departamento => departamento, :despesa_total => despesa_total,
           :salario_total => salario_total, :custo_infraestrutura => custo_infraestrutura, :custo_treinamento => custo_treinamento, 
           :custo_outros => custo_outros)
+
+        FactoryGirl.create(:fato_rh_quantidade_funcionario, :quantidade_funcionarios => (rand*25).to_i, :salario_total => rand*50000, :orcamento_previsto => rand*80000, 
+                           :orcamento_disponivel => rand*80000, :departamento => departamento, :calendario_mes => data)
       end
     end
     
