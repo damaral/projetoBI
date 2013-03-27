@@ -59,34 +59,19 @@ function drawChartLine(dados) {
   chart.draw(data, options);
 }
 
-function drawChartPie(dados) {
+function drawChartPie(slice_name_label, slice_value_label, dados, chart_div) {
 
   // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Motivo');
-  data.addColumn('number', 'Quantidade');
+  data.addColumn('string', slice_name_label);
+  data.addColumn('number', slice_value_label);
   data.addRows(dados);
-  /*data.addRows([
-    ['Jan', 5],
-    ['Fev', 19],
-    ['Mar', 18], 
-    ['Abr', 16],
-    ['Mai', 14],
-    ['Jun', 21],
-    ['Jul', 11],
-    ['Ago', 17],
-    ['Set', 14],
-    ['Out', 12],
-    ['Nov', 1],
-    ['Dez', 2]
-  ]);*/
 
-  // Set chart options
   var options = {
                  'width':800,
                  'height':300};
 
   // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.PieChart(document.getElementById(chart_div));
   chart.draw(data, options);
 }
