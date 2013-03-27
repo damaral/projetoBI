@@ -19,11 +19,12 @@ class FinanceiroController < ApplicationController
 
     meses.each_with_index do |mes, i|
       data = CalendarioMes.find_by_mmyyyy mes
-      @receita[i.next] = data.fato_financeiro_demonstrativo.receita_total.round(2)
-      @custos_variaveis = data.fato_financeiro_demonstrativo.custos_variaveis.round(2)
-      @custos_fixos = data.fato_financeiro_demonstrativo.custos_fixos.round(2)  
-      @impostos = data.fato_financeiro_demonstrativo.impostos.round(2)  
-      @lucros = data.fato_financeiro_demonstrativo.lucros.round(2)      
+      indice = i.next
+      @receita[indice] = data.fato_financeiro_demonstrativo.receita_total.round(2)
+      @custos_variaveis[indice] = data.fato_financeiro_demonstrativo.custos_variaveis.round(2)
+      @custos_fixos[indice] = data.fato_financeiro_demonstrativo.custos_fixos.round(2)  
+      @impostos[indice] = data.fato_financeiro_demonstrativo.impostos.round(2)  
+      @lucros[indice] = data.fato_financeiro_demonstrativo.lucro.round(2)      
     end
 
   end

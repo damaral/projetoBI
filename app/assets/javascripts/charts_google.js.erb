@@ -64,9 +64,10 @@ function drawChartColumn(dados) {
   var data = new google.visualization.DataTable();
   data.addColumn('string', 'Mês');
   data.addColumn('number', 'Receita');
-  data.addColumn('number', 'Receita');
-  data.addColumn('number', 'Receita');
-  data.addColumn('number', 'Receita');
+  data.addColumn('number', 'Custos Variáveis');
+  data.addColumn('number', 'Custos Fixos');
+  data.addColumn('number', 'Impostos');
+  data.addColumn('number', 'Lucros');
   data.addRows(dados);
           
           /*['Year', 'Sales', 'Expenses'],
