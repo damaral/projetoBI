@@ -1,0 +1,27 @@
+<%
+  string_dados = "[['Jan',#{@receita[1]},#{@custos_variaveis[1]},#{@custos_fixos[1]},#{@impostos[1]},#{@lucros[1]}], 
+  	['Fev',#{@receita[2]},#{@custos_variaveis[2]},#{@custos_fixos[2]},#{@impostos[2]},#{@lucros[2]}], 
+  	['Mar',#{@receita[3]},#{@custos_variaveis[3]},#{@custos_fixos[3]},#{@impostos[3]},#{@lucros[3]}], 
+  	['Abr',#{@receita[4]},#{@custos_variaveis[4]},#{@custos_fixos[4]},#{@impostos[4]},#{@lucros[4]}], 
+  	['Mai',#{@receita[5]},#{@custos_variaveis[5]},#{@custos_fixos[5]},#{@impostos[5]},#{@lucros[5]}], 
+  	['Jun',#{@receita[6]},#{@custos_variaveis[6]},#{@custos_fixos[6]},#{@impostos[6]},#{@lucros[6]}], 
+  	['Jul',#{@receita[7]},#{@custos_variaveis[7]},#{@custos_fixos[7]},#{@impostos[7]},#{@lucros[7]}], 
+  	['Ago',#{@receita[8]},#{@custos_variaveis[8]},#{@custos_fixos[8]},#{@impostos[8]},#{@lucros[8]}], 
+  	['Set',#{@receita[9]},#{@custos_variaveis[9]},#{@custos_fixos[9]},#{@impostos[9]},#{@lucros[9]}], 
+  	['Out',#{@receita[10]},#{@custos_variaveis[10]},#{@custos_fixos[10]},#{@impostos[10]},#{@lucros[10]}], 
+  	['Nov',#{@receita[11]},#{@custos_variaveis[11]},#{@custos_fixos[11]},#{@impostos[11]},#{@lucros[11]}], 
+  	['Dez',#{@receita[12]},#{@custos_variaveis[12]},#{@custos_fixos[12]},#{@impostos[12]},#{@lucros[12]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Receita'],
+                     ['number', 'Custos Variáveis'],
+                     ['number', 'Custos Fixos'],
+                     ['number', 'Impostos'],
+                     ['number', 'Lucros']]"
+
+   id_div = "chart_div"
+%>
+dados = <%= string_dados.html_safe %>;
+colunas = <%= string_colunas.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+drawChartColumn(dados, colunas, id_div);
