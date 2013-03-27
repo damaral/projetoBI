@@ -36,5 +36,6 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'data', 'datas'
   inflect.irregular 'fato_produtividade', 'fato_produtividades'
   inflect.irregular 'calendario_mes', 'calendario_meses'
+  inflect.irregular 'fato_financeiro_despesa', 'fato_financeiro_despesas'
   #inflect.uncountable %w( fish sheep )
 end
