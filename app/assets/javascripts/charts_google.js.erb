@@ -1,7 +1,6 @@
  
 $(document).ready(function(){
    $(".filtro_relatorio").submit(function(){
-
      $.ajax({
         type: 'GET',
         url: $(this).attr("action"),
@@ -19,43 +18,25 @@ $(document).ready(function(){
 google.load('visualization', '1.0', {'packages':['corechart']});
 
 
-
-// Set a callback to run when the Google Visualization API is loaded.
-//google.setOnLoadCallback(drawChart);
-
-
-// Callback that creates and populates a data table, 
-// instantiates the pie chart, passes in the data and
-// draws it.
-function drawChartLine(dados) {
+function drawChartLine(dados, colunas, id_div) {
 
   // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Mês');
-  data.addColumn('number', 'Indicador');
+
+  for (var i = 0; i < colunas.length; i++) {
+    data.addColumn(colunas[i][0], colunas[i][1]);
+  }
+
   data.addRows(dados);
-  /*data.addRows([
-    ['Jan', 5],
-    ['Fev', 19],
-    ['Mar', 18], 
-    ['Abr', 16],
-    ['Mai', 14],
-    ['Jun', 21],
-    ['Jul', 11],
-    ['Ago', 17],
-    ['Set', 14],
-    ['Out', 12],
-    ['Nov', 1],
-    ['Dez', 2]
-  ]);*/
 
   // Set chart options
   var options = {
                  'width':800,
-                 'height':300};
+                 'height':300
+                };
 
   // Instantiate and draw our chart, passing in some options.
-  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.LineChart(document.getElementById(id_div));
   chart.draw(data, options);
 }
 
@@ -75,3 +56,24 @@ function drawChartPie(slice_name_label, slice_value_label, dados, chart_div) {
   var chart = new google.visualization.PieChart(document.getElementById(chart_div));
   chart.draw(data, options);
 }
+
+function drawChartColumn(dados, colunas, id_div) {
+        
+  var data = new google.visualization.DataTable();
+
+  for (var i = 0; i < colunas.length; i++) {
+    data.addColumn(colunas[i][0], colunas[i][1]);
+  }
+
+  data.addRows(dados);
+          
+
+  // Instantiate and draw our chart, passing in some options.
+  var options = {
+
+  };
+
+  var chart = new google.visualization.ColumnChart(document.getElementById(id_div));
+    chart.draw(data, options);
+}
+

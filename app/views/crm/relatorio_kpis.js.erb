@@ -1,5 +1,8 @@
 <%
-  string_dados = "[['Jan',#{@dados[1]}], ['Fev',#{@dados[2]}], ['Mar',#{@dados[3]}], ['Abr',#{@dados[4]}], ['Mai',#{@dados[5]}], ['Jun',#{@dados[6]}], ['Jul',#{@dados[7]}], ['Ago',#{@dados[8]}], ['Set',#{@dados[9]}], ['Out',#{@dados[10]}], ['Nov',#{@dados[11]}], ['Dez',#{@dados[12]}]]"
+string_dados = "[['Jan',#{@dados[1]}], ['Fev',#{@dados[2]}], ['Mar',#{@dados[3]}], ['Abr',#{@dados[4]}], ['Mai',#{@dados[5]}], ['Jun',#{@dados[6]}], ['Jul',#{@dados[7]}], ['Ago',#{@dados[8]}], ['Set',#{@dados[9]}], ['Out',#{@dados[10]}], ['Nov',#{@dados[11]}], ['Dez',#{@dados[12]}]]"
+string_colunas = "[['string', 'Mês'], ['number', 'CAC']]"
+
 %>
 dados = <%= string_dados.html_safe %>;
-drawChartLine(dados);
+colunas = <%= string_colunas.html_safe %>;
+drawChartLine(dados, colunas, 'chart_div');
