@@ -11,6 +11,17 @@
   	['Out',#{@receita[10]},#{@custos_variaveis[10]},#{@custos_fixos[10]},#{@impostos[10]},#{@lucros[10]}], 
   	['Nov',#{@receita[11]},#{@custos_variaveis[11]},#{@custos_fixos[11]},#{@impostos[11]},#{@lucros[11]}], 
   	['Dez',#{@receita[12]},#{@custos_variaveis[12]},#{@custos_fixos[12]},#{@impostos[12]},#{@lucros[12]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Receita'],
+                     ['number', 'Custos Variáveis'],
+                     ['number', 'Custos Fixos'],
+                     ['number', 'Impostos'],
+                     ['number', 'Lucros']]"
+
+   id_div = "chart_div"
 %>
 dados = <%= string_dados.html_safe %>;
-drawChartColumn(dados);
+colunas = <%= string_colunas.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+drawChartColumn(dados, colunas, id_div);
