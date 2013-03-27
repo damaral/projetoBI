@@ -11,6 +11,8 @@ namespace :popular_banco do
      "tipo_chamados",
      "fato_suporte_chamados_departamentos",
      "fato_suporte_tempo_de_atendimentos"].each do |table|
+     "fato_rh_quantidade_funcionarios",
+     "fato_financeiro_despesas"].each do |table|
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
@@ -35,7 +37,7 @@ namespace :popular_banco do
 
     departamentos = Array.new
     departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestão"] 
-     departamentos_nomes.each do |nome|
+    departamentos_nomes.each do |nome|
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
     end
 
@@ -78,6 +80,8 @@ namespace :popular_banco do
             :departamento => departamento, :tipo_chamado => nome, :tempo_medio_atendimento => t_medio_atendimento, 
             :num_chamados_estourados => n_estourados)
         end
+        FactoryGirl.create(:fato_rh_quantidade_funcionario, :quantidade_funcionarios => (rand*25).to_i, :salario_total => rand*50000, :orcamento_previsto => rand*80000, 
+                           :orcamento_disponivel => rand*80000, :departamento => departamento, :calendario_mes => data)
       end
     end
 
