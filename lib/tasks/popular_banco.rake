@@ -15,8 +15,6 @@ namespace :popular_banco do
     "fato_crm_kpis", 
     "fato_crm_sacs", 
     "motivos"].each do |table|
-
->>>>>>> 13e61dba911de2f8706590f20ec1443d881b6812
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
