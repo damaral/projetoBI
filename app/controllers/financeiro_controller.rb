@@ -44,7 +44,6 @@ class FinanceiroController < ApplicationController
       data.fato_financeiro_despesas.each_with_index do |dado, i|
         indice = i.next
         @departamentos[indice] = dado.departamento.nome
-        puts "DADO #{dado.despesa_total.round(2)} ================================================"
         @despesas[indice] = dado.despesa_total.round(2)
 
       end
@@ -52,6 +51,24 @@ class FinanceiroController < ApplicationController
     elsif !params[:filtro_2].nil?
       ano = params[:filtro_2][:ano]
       mes = params[:filtro_2][:mes]
+
+      @departamentos = Array.new
+      @salarios = Array.new
+      @infra = Array.new
+      @treinamento = Array.new
+      @outros = Array.new
+
+      data = CalendarioMes.find_by_mmyyyy "#{mes}#{ano}"
+
+      data.fato_financeiro_despesas.each_with_index do |dado, i|
+        indice = i.next
+        @departamentos[indice] = dado.departamento.nome
+        @salarios[indice] = dado.salario_total.round(2)
+        @infra[indice] = dado.custo_infraestrutura.round(2)
+        @treinamento[indice] = dado.custo_treinamento.round(2)
+        @outros[indice] = dado.custo_outros.round(2)
+
+      end
 
     end
 

@@ -33,8 +33,8 @@
               <div style="height: 190px">
               <%= simple_form_for :filtro_2, :url => "/financeiro/despesas_detalhadas", :remote => true, :html => {:class => 'span12 form-vertical filtro_relatorio'} do |f| %>
                                <%= f.input :ano, :collection => ["2009", "2010", "2011", "2012", "2013"], :required => false, :label => "Ano", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
-                <%= f.input :mes, :collection => {"Jan" => 1, "Fev" => 2, "Mar" => 3, "Abr" => 4, "Mai" => 5, "Jun" => 6,
-                  "Jul" => 7, "Ago" => 8, "Set" => 9, "Out" => 10, "Nov" => 11, "Dez" => 12}, :required => false, :label => "Mês", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
+                <%= f.input :mes, :collection => {"Jan" => "01", "Fev" => "02", "Mar" => "03", "Abr" => "04", "Mai" => "05", "Jun" => "06",
+                  "Jul" => "07", "Ago" => "08", "Set" => "09", "Out" => "10", "Nov" => "11", "Dez" => "12"}, :required => false, :label => "Mês", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
                 <%= f.button :submit, "Gerar Relatório" %>
               <% end %>
               </div>
