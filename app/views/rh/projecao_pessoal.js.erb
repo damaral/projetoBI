@@ -1,0 +1,25 @@
+<%
+  string_dados = "[['Jan', #{@dados[:quantidade_funcionarios][1][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][1][:salario_total]}, #{@dados[:quantidade_funcionarios][1][:orcamento_disponivel]}], 
+    ['Fev',#{@dados[:quantidade_funcionarios][2][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][2][:salario_total]}, #{@dados[:quantidade_funcionarios][2][:orcamento_disponivel]}], 
+    ['Mar',#{@dados[:quantidade_funcionarios][3][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][3][:salario_total]}, #{@dados[:quantidade_funcionarios][3][:orcamento_disponivel]}], 
+    ['Abr',#{@dados[:quantidade_funcionarios][4][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][4][:salario_total]}, #{@dados[:quantidade_funcionarios][4][:orcamento_disponivel]}], 
+    ['Mai',#{@dados[:quantidade_funcionarios][5][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][5][:salario_total]}, #{@dados[:quantidade_funcionarios][5][:orcamento_disponivel]}], 
+    ['Jun',#{@dados[:quantidade_funcionarios][6][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][6][:salario_total]}, #{@dados[:quantidade_funcionarios][6][:orcamento_disponivel]}], 
+    ['Jul',#{@dados[:quantidade_funcionarios][7][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][7][:salario_total]}, #{@dados[:quantidade_funcionarios][7][:orcamento_disponivel]}], 
+    ['Ago',#{@dados[:quantidade_funcionarios][8][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][8][:salario_total]}, #{@dados[:quantidade_funcionarios][8][:orcamento_disponivel]}], 
+    ['Set',#{@dados[:quantidade_funcionarios][9][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][9][:salario_total]}, #{@dados[:quantidade_funcionarios][9][:orcamento_disponivel]}], 
+    ['Out',#{@dados[:quantidade_funcionarios][10][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][10][:salario_total]}, #{@dados[:quantidade_funcionarios][10][:orcamento_disponivel]}], 
+    ['Nov',#{@dados[:quantidade_funcionarios][11][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][11][:salario_total]}, #{@dados[:quantidade_funcionarios][11][:orcamento_disponivel]}], 
+    ['Dez',#{@dados[:quantidade_funcionarios][12][:orcamento_previsto]}, #{@dados[:quantidade_funcionarios][12][:salario_total]}, #{@dados[:quantidade_funcionarios][12][:orcamento_disponivel]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Orçamento Previsto'],
+                     ['number', 'Salário Total'],
+                     ['number', 'Orçamento Disponível']]"
+
+   id_div = "chart_div"
+%>
+dados = <%= string_dados.html_safe %>;
+colunas = <%= string_colunas.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+drawChartColumn(dados, colunas, id_div);

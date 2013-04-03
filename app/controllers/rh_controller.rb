@@ -43,4 +43,33 @@ class RhController < ApplicationController
     end
 
   end
+
+  def projecao_pessoal
+    unless params[:filtros].nil?
+      ano = params[:filtros][:ano]
+      departamento = params[:filtros][:dapartamento]
+    else
+      ano = Time.now.year
+      departamento = 1
+    end
+
+    meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
+           "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]      
+
+    
+    @dados = Hash.new
+    @dados[:quantidade_funcionarios] = Array.new
+    
+    meses.each_with_index do |mes, i|
+      data = CalendarioMes.find_by_mmyyyy mes
+      fato_rh_quantidade_funcionarios = data.fato_rh_quantidade_funcionarios.where("departamento_id = #{departamento}")
+
+      indice = i.next
+      @dados[:quantidade_funcionarios][indice] = Hash.new
+      @dados[:quantidade_funcionarios][indice][:salario_total] = fato_rh_quantidade_funcionarios[0].salario_total
+      @dados[:quantidade_funcionarios][indice][:orcamento_previsto] = fato_rh_quantidade_funcionarios[0].orcamento_previsto
+      @dados[:quantidade_funcionarios][indice][:orcamento_disponivel] = fato_rh_quantidade_funcionarios[0].orcamento_disponivel
+      
+    end
+  end
 end
