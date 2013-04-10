@@ -22,22 +22,25 @@ if !params[:filtro_1].nil?
    tipo_grafico = 1
 
 elsif !params[:filtro_2].nil?
-  string_dados = "[['#{@departamentos[1]}',#{@salarios[1]}, #{@infra[1]}, #{@treinamento[1]}, #{@outros[1]}], 
-  	['#{@departamentos[2]}',#{@salarios[2]}, #{@infra[2]}, #{@treinamento[2]}, #{@outros[2]}],
-    ['#{@departamentos[3]}',#{@salarios[3]}, #{@infra[3]}, #{@treinamento[3]}, #{@outros[3]}],
-    ['#{@departamentos[4]}',#{@salarios[4]}, #{@infra[4]}, #{@treinamento[4]}, #{@outros[4]}],
-    ['#{@departamentos[5]}',#{@salarios[5]}, #{@infra[5]}, #{@treinamento[5]}, #{@outros[5]}]]"
+  string_dados = "[['Jan', #{@num_estagiarios[1]}], 
+                   ['Fev', #{@num_estagiarios[2]}], 
+                   ['Mar', #{@num_estagiarios[3]}], 
+                   ['Abr', #{@num_estagiarios[4]}], 
+                   ['Mai', #{@num_estagiarios[5]}], 
+                   ['Jun', #{@num_estagiarios[6]}], 
+                   ['Jul', #{@num_estagiarios[7]}], 
+                   ['Ago', #{@num_estagiarios[8]}], 
+                   ['Set', #{@num_estagiarios[9]}], 
+                   ['Out', #{@num_estagiarios[10]}], 
+                   ['Nov', #{@num_estagiarios[11]}], 
+                   ['Dez', #{@num_estagiarios[12]}]]"
 
-  id_div = "chart_div2"
+   id_div = "chart_div2"
 
-  string_colunas = "[['string', 'Departamento'],
-                     ['number', 'Salários'],
-                     ['number', 'Infraestrutura'],
-                     ['number', 'Treinamento'],
-                     ['number', 'Outros']]"
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de Estagiários']]"
 
-   tipo_grafico = 2
-
+   tipo_grafico = 1
 end
 %>
 tipo_grafico = <%= tipo_grafico %>;
