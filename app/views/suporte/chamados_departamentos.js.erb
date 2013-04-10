@@ -1,13 +1,60 @@
 <%
+if !params[:filtro_num_chamados].nil?
+
   string_dados="["
-  
   @labels.length.times do |i|
     string_dados = string_dados + "['#{@labels[i]}',#{@values[i]}],"
   end
-
   string_dados = string_dados.slice!(0, string_dados.length - 1)
-    string_dados = string_dados + "]"
+  string_dados = string_dados + "]"
 
+  string_colunas = "''"
+
+  id_div = "chart_div"
+
+  num_chamados = true
+  tipo_chamados = false
+
+elsif !params[:filtro_tipo_chamados].nil?
+
+  # string_dados = "[['#{@departamentos[1]}',#{@equipamento[1]}, #{@software[1]}, #{@ambiente[1]}, #{@usuario[1]}, #{@manutencao[1]}, #{@outros[1]}],
+  #                 ['#{@departamentos[2]}',#{@equipamento[2]}, #{@software[2]}, #{@ambiente[2]}, #{@usuario[2]}, #{@manutencao[2]}, #{@outros[2]}],
+  #                 ['#{@departamentos[3]}',#{@equipamento[3]}, #{@software[3]}, #{@ambiente[3]}, #{@usuario[3]}, #{@manutencao[3]}, #{@outros[3]}],
+  #                 ['#{@departamentos[4]}',#{@equipamento[4]}, #{@software[4]}, #{@ambiente[4]}, #{@usuario[4]}, #{@manutencao[4]}, #{@outros[4]}],
+  #                 ['#{@departamentos[5]}',#{@equipamento[5]}, #{@software[5]}, #{@ambiente[5]}, #{@usuario[5]}, #{@manutencao[5]}, #{@outros[5]}],
+  #                 ['#{@departamentos[6]}',#{@equipamento[6]}, #{@software[6]}, #{@ambiente[6]}, #{@usuario[6]}, #{@manutencao[6]}, #{@outros[6]}]]"
+
+  string_dados = "[['#{@departamentos[1]}',#{@equipamento[1]}, #{@software[1]}, #{@ambiente[1]}, #{@usuario[1]}, #{@manutencao[1]}, #{@outros[1]}],
+                  ['#{@departamentos[2]}',#{@equipamento[2]}, #{@software[2]}, #{@ambiente[2]}, #{@usuario[2]}, #{@manutencao[2]}, #{@outros[2]}],
+                  ['#{@departamentos[3]}',#{@equipamento[3]}, #{@software[3]}, #{@ambiente[3]}, #{@usuario[3]}, #{@manutencao[3]}, #{@outros[3]}],
+                  ['#{@departamentos[4]}',#{@equipamento[4]}, #{@software[4]}, #{@ambiente[4]}, #{@usuario[4]}, #{@manutencao[4]}, #{@outros[4]}],
+                  ['#{@departamentos[5]}',#{@equipamento[5]}, #{@software[5]}, #{@ambiente[5]}, #{@usuario[5]}, #{@manutencao[5]}, #{@outros[5]}]]"
+
+  string_colunas = "[['string', 'Departamento'],
+                    ['number', 'Pedido de Compra de Equipamento'],
+                    ['number', 'Pedido de Compra de Software'],
+                    ['number', 'Indisponibilidade de Ambiente'],
+                    ['number', 'Problema de Usuário'],
+                    ['number', 'Manutenção'],
+                    ['number', 'Outros']]"
+
+  id_div = "chart_div2"
+
+  num_chamados = false
+  tipo_chamados = true
+
+end
 %>
+
+numero = <%= num_chamados %>;
+tipo = <%= tipo_chamados %>;
+id_div = '<%= id_div.html_safe %>';
+colunas = <%= string_colunas.html_safe %>;
 dados = <%= string_dados.html_safe %>;
-drawChartPie('Departamento', 'Quantidade', dados, 'chart_div');
+
+if (numero) {
+  drawChartPie('Departamento', 'Quantidade', dados, id_div);  
+}
+if (tipo) {
+  drawChartColumn(dados, colunas, id_div);
+} 

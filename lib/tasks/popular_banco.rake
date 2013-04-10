@@ -50,13 +50,18 @@ namespace :popular_banco do
     cac = 500
 
     departamentos = Array.new
-    departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestão"] 
+    departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestao"] 
     departamentos_nomes.each do |nome|
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
     end
 
     chamados = Array.new
-    chamado_nomes = ["tipo 1", "tipo 2", "tipo 3", "tipo 4", "tipo 5"]
+    chamado_nomes = ["Pedido de Compra de Equipamento", 
+                    "Pedido de Compra de Software", 
+                    "Indisponibilidade de Ambiente", 
+                    "Problema de Usuario", 
+                    "Manutencao", 
+                    "Outros"]
     chamado_nomes.each do |nome|
       chamados.push FactoryGirl.create(:tipo_chamado, :nome => nome)
     end
@@ -94,15 +99,15 @@ namespace :popular_banco do
           :salario_total => salario_total, :custo_infraestrutura => custo_infraestrutura, :custo_treinamento => custo_treinamento, 
           :custo_outros => custo_outros)
 
-        chamados.each_with_index do |nome|
+        chamados.each_with_index do |chamado|
           num_chamados = 10*rand
           FactoryGirl.create(:fato_suporte_chamados_departamento, :calendario_mes => data, 
-            :departamento => departamento, :tipo_chamado => nome, :num_chamados => num_chamados)
+            :departamento => departamento, :tipo_chamado => chamado, :num_chamados => num_chamados)
 
           t_medio_atendimento = 100*rand
-          n_estourados = rand
+          n_estourados = 10*rand
           FactoryGirl.create(:fato_suporte_tempo_de_atendimento, :calendario_mes => data, 
-            :departamento => departamento, :tipo_chamado => nome, :tempo_medio_atendimento => t_medio_atendimento, 
+            :departamento => departamento, :tipo_chamado => chamado, :tempo_medio_atendimento => t_medio_atendimento, 
             :num_chamados_estourados => n_estourados)
         end
         FactoryGirl.create(:fato_rh_quantidade_funcionario, :quantidade_funcionarios => (rand*25).to_i, :salario_total => rand*50000, :orcamento_previsto => rand*80000, 
