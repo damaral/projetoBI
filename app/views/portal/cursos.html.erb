@@ -15,15 +15,12 @@
               <div class="section-title">Estagiários</div>
               <div style="height: 190px">
               <%= simple_form_for :filtro_1, :url => "/portal/empresas", :remote => true, :html => {:class => 'span12 form-vertical filtro_relatorio'} do |f| %>
-                <div class="control-group string optional filtro__empresa"><label class="string optional control-label" for="filtro_1_empresa">Empresa</label><div class="controls"><input list="empresas" class="string optional span2" id="filtro_1_empresa" name="filtro_1[empresa]" size="50" type="text">
+                <div class="control-group string optional filtro__empresa"><label class="string optional control-label" for="filtro_1_empresa">Facudade curso</label><div class="controls"><input list="empresas" class="string optional span2" id="filtro_1_empresa" name="filtro_1[empresa]" size="50" type="text">
                   <datalist id="empresas">
                     <% faculdade = Array.new 
                        Curso.all.each do |curso|
-                        faculdade.push curso.faculdade
-                       end
-                       faculdade.uniq.each do |faculdade| 
                       %>
-                    <option value="<%= faculdade %>">
+                    <option value="<%= "#{curso.faculdade} - #{curso.nome}" %>">
                     <% end %>
                   </datalist></div></div>
                 <%= f.input :ano, :collection => ["2009", "2010", "2011", "2012", "2013"], :required => false, :label => "Ano", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
