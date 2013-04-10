@@ -1,0 +1,52 @@
+<%
+if !params[:filtro_1].nil?
+  string_dados = "[['Jan',#{@vagas[1]}, #{@contratacoes[1]}], 
+                   ['Fev',#{@vagas[2]}, #{@contratacoes[2]}], 
+                   ['Mar',#{@vagas[3]}, #{@contratacoes[3]}], 
+                   ['Abr',#{@vagas[4]}, #{@contratacoes[4]}], 
+                   ['Mai',#{@vagas[5]}, #{@contratacoes[5]}], 
+                   ['Jun',#{@vagas[6]}, #{@contratacoes[6]}], 
+                   ['Jul',#{@vagas[7]}, #{@contratacoes[7]}], 
+                   ['Ago',#{@vagas[8]}, #{@contratacoes[8]}], 
+                   ['Set',#{@vagas[9]}, #{@contratacoes[9]}], 
+                   ['Out',#{@vagas[10]}, #{@contratacoes[10]}], 
+                   ['Nov',#{@vagas[11]}, #{@contratacoes[11]}], 
+                   ['Dez',#{@vagas[12]}, #{@contratacoes[12]}]]"
+
+   id_div = "chart_div"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Vagas'],
+                     ['number', 'Contratações']]"
+
+   tipo_grafico = 1
+
+elsif !params[:filtro_2].nil?
+  string_dados = "[['#{@departamentos[1]}',#{@salarios[1]}, #{@infra[1]}, #{@treinamento[1]}, #{@outros[1]}], 
+  	['#{@departamentos[2]}',#{@salarios[2]}, #{@infra[2]}, #{@treinamento[2]}, #{@outros[2]}],
+    ['#{@departamentos[3]}',#{@salarios[3]}, #{@infra[3]}, #{@treinamento[3]}, #{@outros[3]}],
+    ['#{@departamentos[4]}',#{@salarios[4]}, #{@infra[4]}, #{@treinamento[4]}, #{@outros[4]}],
+    ['#{@departamentos[5]}',#{@salarios[5]}, #{@infra[5]}, #{@treinamento[5]}, #{@outros[5]}]]"
+
+  id_div = "chart_div2"
+
+  string_colunas = "[['string', 'Departamento'],
+                     ['number', 'Salários'],
+                     ['number', 'Infraestrutura'],
+                     ['number', 'Treinamento'],
+                     ['number', 'Outros']]"
+
+   tipo_grafico = 2
+
+end
+%>
+tipo_grafico = <%= tipo_grafico %>;
+dados = <%= string_dados.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+colunas = <%= string_colunas.html_safe %>;
+if (tipo_grafico == 1) {
+	drawChartColumn(dados, colunas, id_div);
+}
+else {
+  drawChartPie('Despesas', 'Reais', dados, id_div);
+}

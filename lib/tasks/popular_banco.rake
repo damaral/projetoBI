@@ -11,7 +11,13 @@ namespace :popular_banco do
     "fato_rh_produtividades",
     "fato_financeiro_demonstrativos",
     "fato_rh_quantidade_funcionarios",
-    "fato_financeiro_despesas"].each do |table|
+    "fato_financeiro_despesas",
+    "fato_portal_empresa_mensals",
+    "fato_portal_empresa_anuals",
+    "fato_portal_curso_mensals",
+    "fato_portal_curso_empresa_mensals",
+    "empresas",
+    "cursos"].each do |table|
 
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
@@ -23,6 +29,26 @@ namespace :popular_banco do
     motivos.push FactoryGirl.create(:motivo, :nome => "Falta de informações", :descricao => "Bog")
     motivos.push FactoryGirl.create(:motivo, :nome => "Outros", :descricao => "Dan Carai")
 
+    empresas = Array.new
+    empresas.push FactoryGirl.create(:empresa, :nome => "I.ndigo")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Iteris")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Mowa")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Certsys")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Itaú")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Oracle")
+    empresas.push FactoryGirl.create(:empresa, :nome => "IBM")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Facebook")
+    empresas.push FactoryGirl.create(:empresa, :nome => "Touch")
+
+    faculdades = ["USP","FEI","Mauá","Ufscar","Mackenzie","Unip"]
+    cursos = Array.new
+
+    faculdades.each do |faculdade|
+      cursos.push FactoryGirl.create(:curso, :faculdade => faculdade, :nome => "Engenharia")
+      cursos.push FactoryGirl.create(:curso, :faculdade => faculdade, :nome => "Administração")
+      cursos.push FactoryGirl.create(:curso, :faculdade => faculdade, :nome => "Economia")
+      cursos.push FactoryGirl.create(:curso, :faculdade => faculdade, :nome => "Ciencia da Computação")
+    end
 
 
     data_mes = Array.new
@@ -52,7 +78,6 @@ namespace :popular_banco do
     departamentos_nomes.each do |nome|
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
     end
-
 
     data_mes.each_with_index do |data, j|
       cac = cac*0.95
@@ -89,6 +114,20 @@ namespace :popular_banco do
 
         FactoryGirl.create(:fato_rh_quantidade_funcionario, :quantidade_funcionarios => (rand*25).to_i, :salario_total => rand*50000, :orcamento_previsto => rand*80000, 
                            :orcamento_disponivel => rand*80000, :departamento => departamento, :calendario_mes => data)
+      end
+
+      empresas.each do |empresa|
+        FactoryGirl.create(:fato_portal_empresa_mensal, :calendario_mes => data, :empresa => empresa, :num_vagas => 20*rand, :num_contratacoes => 10*rand, 
+          :num_demissoes_involuntarias => 3*rand, :num_demissoes_voluntarias => 2*rand, :num_estagiarios => 15*rand, :num_medio_dias_contratacao => 40*rand)
+        FactoryGirl.create(:fato_portal_empresa_anual, :calendario_mes => data, :empresa => empresa, :salario_medio => 3000*rand)
+        cursos.each do |curso|
+          FactoryGirl.create(:fato_portal_curso_empresa_mensal, :calendario_mes => data, :curso => curso, :empresa => empresa, :fracao_estagiarios => 10*rand)
+        end
+      end
+
+      cursos.each do |curso|
+        FactoryGirl.create(:fato_portal_curso_mensal, :calendario_mes => data, :curso => curso, :num_estagiario_ativos => 50*rand, :num_estagiarios_contratados => 10*rand, 
+          :taxa_de_aceitacao_contrado => 100*rand, :salario_medio => 3000*rand)
       end
 
     end
