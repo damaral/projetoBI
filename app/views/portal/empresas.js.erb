@@ -41,6 +41,49 @@ elsif !params[:filtro_2].nil?
                      ['number', 'Número de Estagiários']]"
 
    tipo_grafico = 1
+
+elsif !params[:filtro_3].nil?
+  string_dados = "[['Jan', #{@num_medio_dias_contratacao[1]}], 
+                   ['Fev', #{@num_medio_dias_contratacao[2]}], 
+                   ['Mar', #{@num_medio_dias_contratacao[3]}], 
+                   ['Abr', #{@num_medio_dias_contratacao[4]}], 
+                   ['Mai', #{@num_medio_dias_contratacao[5]}], 
+                   ['Jun', #{@num_medio_dias_contratacao[6]}], 
+                   ['Jul', #{@num_medio_dias_contratacao[7]}], 
+                   ['Ago', #{@num_medio_dias_contratacao[8]}], 
+                   ['Set', #{@num_medio_dias_contratacao[9]}], 
+                   ['Out', #{@num_medio_dias_contratacao[10]}], 
+                   ['Nov', #{@num_medio_dias_contratacao[11]}], 
+                   ['Dez', #{@num_medio_dias_contratacao[12]}]]"
+
+   id_div = "chart_div3"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número médio dias contratação']]"
+
+   tipo_grafico = 2
+
+elsif !params[:filtro_4].nil?
+  string_dados = "[['Jan',#{@num_demissoes_voluntarias[1]}, #{@num_demissoes_involuntarias[1]}], 
+                   ['Fev',#{@num_demissoes_voluntarias[2]}, #{@num_demissoes_involuntarias[2]}], 
+                   ['Mar',#{@num_demissoes_voluntarias[3]}, #{@num_demissoes_involuntarias[3]}], 
+                   ['Abr',#{@num_demissoes_voluntarias[4]}, #{@num_demissoes_involuntarias[4]}], 
+                   ['Mai',#{@num_demissoes_voluntarias[5]}, #{@num_demissoes_involuntarias[5]}], 
+                   ['Jun',#{@num_demissoes_voluntarias[6]}, #{@num_demissoes_involuntarias[6]}], 
+                   ['Jul',#{@num_demissoes_voluntarias[7]}, #{@num_demissoes_involuntarias[7]}], 
+                   ['Ago',#{@num_demissoes_voluntarias[8]}, #{@num_demissoes_involuntarias[8]}], 
+                   ['Set',#{@num_demissoes_voluntarias[9]}, #{@num_demissoes_involuntarias[9]}], 
+                   ['Out',#{@num_demissoes_voluntarias[10]}, #{@num_demissoes_involuntarias[10]}], 
+                   ['Nov',#{@num_demissoes_voluntarias[11]}, #{@num_demissoes_involuntarias[11]}], 
+                   ['Dez',#{@num_demissoes_voluntarias[12]}, #{@num_demissoes_involuntarias[12]}]]"
+
+   id_div = "chart_div4"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de demissões voluntárias'],
+                     ['number', 'Número de demissões involuntárias']]"
+
+   tipo_grafico = 1
 end
 %>
 tipo_grafico = <%= tipo_grafico %>;
@@ -49,6 +92,9 @@ id_div = '<%= id_div.html_safe %>';
 colunas = <%= string_colunas.html_safe %>;
 if (tipo_grafico == 1) {
 	drawChartColumn(dados, colunas, id_div);
+}
+else if (tipo_grafico == 2) {
+  drawChartLine(dados, colunas, id_div);
 }
 else {
   drawChartPie('Despesas', 'Reais', dados, id_div);
