@@ -96,7 +96,7 @@
         <div class="row-fluid">
           <div class="span12">
             <div class="padded">
-              <div class="section-title">Distribuição de Cursos</div>
+              <div class="section-title">Distribuição de Universidades por Empresa</div>
               <div style="height: 190px">
               <%= simple_form_for :filtro_5, :url => "/portal/empresas", :remote => true, :html => {:class => 'span12 form-vertical filtro_relatorio'} do |f| %>
                 <div class="control-group string optional filtro__empresa"><label class="string optional control-label" for="filtro_5_empresa">Empresa</label><div class="controls"><input list="empresas" class="string optional span2" id="filtro_5_empresa" name="filtro_5[empresa]" size="50" type="text">
@@ -106,6 +106,8 @@
                     <% end %>
                   </datalist></div></div>
                 <%= f.input :ano, :collection => ["2009", "2010", "2011", "2012", "2013"], :required => false, :label => "Ano", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
+                <%= f.input :mes, :collection => {"Jan" => "01", "Fev" => "02", "Mar" => "03", "Abr" => "04", "Mai" => "05", "Jun" => "06",
+                  "Jul" => "07", "Ago" => "08", "Set" => "09", "Out" => "10", "Nov" => "11", "Dez" => "12"}, :required => false, :label => "Mês", :prompt => "Selecione", :input_html => {:class => 'span2'}, :wrapper_html => {:class => ''} %>
                 <%= f.button :submit, "Gerar Relatório" %>
               <% end %>
               </div>

@@ -68,23 +68,27 @@ class PortalController < ApplicationController
       end
 
     elsif !params[:filtro_5].nil?
-      empresa = Empresa.find_by_nome params[:filtro_5][:empresa]
-      ano = params[:filtro_5][:ano]
+        empresa = Empresa.find_by_nome params[:filtro_5][:empresa]
+        ano = params[:filtro_5][:ano]
+        mes = params[:filtro_5][:mes]
 
-      meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
-             "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
+        data = CalendarioMes.find_by_mmyyyy "#{mes}#{ano}"
 
-      @vagas = Array.new
-      @contratacoes = Array.new
+        fatos = data.fato_portal_curso_empresa_mensals.where("empresa_id = #{empresa.id}")
 
-      meses.each_with_index do |mes, i|
-        data = CalendarioMes.find_by_mmyyyy mes
-        fato_portal_empresa_mensal = data.fato_portal_empresa_mensals.where("empresa_id = #{empresa.id}")
-        @vagas[i.next] = fato_portal_empresa_mensal[0].num_vagas
-        @contratacoes[i.next] = fato_portal_empresa_mensal[0].num_contratacoes
-      end
+        @num_estagiarios = Hash.new
+        
+        fatos.each do |fato|
+          unless @num_estagiarios[fato.curso.faculdade].nil?
+            @num_estagiarios[fato.curso.faculdade] += fato.fracao_estagiarios.round
+          else
+            @num_estagiarios[fato.curso.faculdade] = fato.fracao_estagiarios.round
+          end
+        end
+
+        puts "NUM ESTAGIARIO = #{@num_estagiarios.inspect}" 
+       
     end
-
   end
 
   def cursos

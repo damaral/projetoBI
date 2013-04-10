@@ -84,6 +84,24 @@ elsif !params[:filtro_4].nil?
                      ['number', 'Número de demissões involuntárias']]"
 
    tipo_grafico = 1
+
+elsif !params[:filtro_5].nil?
+  string_dados = "["
+
+  @num_estagiarios.each do |faculdade, numero|
+    string_dados << "['#{faculdade}', #{numero}], "
+  end
+
+  string_dados = string_dados.slice!(0..string_dados.length-3)
+  string_dados << "]"                   
+
+   id_div = "chart_div5"
+
+   string_colunas = "''"
+
+   grafico1 = true
+
+   tipo_grafico = 3
 end
 %>
 tipo_grafico = <%= tipo_grafico %>;
