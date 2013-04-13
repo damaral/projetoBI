@@ -1,0 +1,49 @@
+<%
+if !params[:filtro_tempo_medio_atendimento].nil?
+
+  string_dados = "[['Jan',#{@dados[:tempo_atendimento][1]}], 
+                   ['Fev',#{@dados[:tempo_atendimento][2]}], 
+                   ['Mar',#{@dados[:tempo_atendimento][3]}], 
+                   ['Abr',#{@dados[:tempo_atendimento][4]}], 
+                   ['Mai',#{@dados[:tempo_atendimento][5]}], 
+                   ['Jun',#{@dados[:tempo_atendimento][6]}], 
+                   ['Jul',#{@dados[:tempo_atendimento][7]}], 
+                   ['Ago',#{@dados[:tempo_atendimento][8]}], 
+                   ['Set',#{@dados[:tempo_atendimento][9]}], 
+                   ['Out',#{@dados[:tempo_atendimento][10]}], 
+                   ['Nov',#{@dados[:tempo_atendimento][11]}], 
+                   ['Dez',#{@dados[:tempo_atendimento][12]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Tempo Médio de Atendimento']]"
+
+  id_div = "chart_div"
+
+elsif !params[:filtro_chamados_estourados].nil?
+
+  string_dados = "[['Jan',#{@dados[:chamados_estourados][1]}], 
+                   ['Fev',#{@dados[:chamados_estourados][2]}], 
+                   ['Mar',#{@dados[:chamados_estourados][3]}], 
+                   ['Abr',#{@dados[:chamados_estourados][4]}], 
+                   ['Mai',#{@dados[:chamados_estourados][5]}], 
+                   ['Jun',#{@dados[:chamados_estourados][6]}], 
+                   ['Jul',#{@dados[:chamados_estourados][7]}], 
+                   ['Ago',#{@dados[:chamados_estourados][8]}], 
+                   ['Set',#{@dados[:chamados_estourados][9]}], 
+                   ['Out',#{@dados[:chamados_estourados][10]}], 
+                   ['Nov',#{@dados[:chamados_estourados][11]}], 
+                   ['Dez',#{@dados[:chamados_estourados][12]}]]"
+
+  string_colunas = "[['string', 'Mês'],
+                     ['number', 'Nº de Chamados Estourados']]"
+
+  id_div = "chart_div2"
+
+end
+%>
+
+id_div = '<%= id_div.html_safe %>';
+colunas = <%= string_colunas.html_safe %>;
+dados = <%= string_dados.html_safe %>;
+
+drawChartLine(dados, colunas, id_div);

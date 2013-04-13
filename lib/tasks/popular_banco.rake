@@ -4,6 +4,14 @@ namespace :popular_banco do
   task :dados_teste => :environment do
 
     ["calendario_meses",
+     "departamentos",
+     "fato_rh_produtividades",
+     "fato_financeiro_demonstrativos",
+     "fato_financeiro_despesas",
+     "tipo_chamados",
+     "fato_suporte_chamados_departamentos",
+     "fato_suporte_tempo_de_atendimentos",
+     "fato_rh_quantidade_funcionarios",
     "fato_crm_kpis", 
     "fato_crm_sacs", 
     "motivos",
@@ -18,7 +26,6 @@ namespace :popular_banco do
     "fato_portal_curso_empresa_mensals",
     "empresas",
     "cursos"].each do |table|
-
       ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
      end
 
@@ -74,9 +81,20 @@ namespace :popular_banco do
     cac = 500
 
     departamentos = Array.new
-    departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestão"] 
+    departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestao"] 
     departamentos_nomes.each do |nome|
       departamentos.push FactoryGirl.create(:departamento, :nome => nome)
+    end
+
+    chamados = Array.new
+    chamado_nomes = ["Pedido de Compra de Equipamento", 
+                    "Pedido de Compra de Software", 
+                    "Indisponibilidade de Ambiente", 
+                    "Problema de Usuario", 
+                    "Manutencao", 
+                    "Outros"]
+    chamado_nomes.each do |nome|
+      chamados.push FactoryGirl.create(:tipo_chamado, :nome => nome)
     end
 
     data_mes.each_with_index do |data, j|
@@ -112,6 +130,17 @@ namespace :popular_banco do
           :salario_total => salario_total, :custo_infraestrutura => custo_infraestrutura, :custo_treinamento => custo_treinamento, 
           :custo_outros => custo_outros)
 
+        chamados.each_with_index do |chamado|
+          num_chamados = 10*rand
+          FactoryGirl.create(:fato_suporte_chamados_departamento, :calendario_mes => data, 
+            :departamento => departamento, :tipo_chamado => chamado, :num_chamados => num_chamados)
+
+          t_medio_atendimento = 100*rand
+          n_estourados = 10*rand
+          FactoryGirl.create(:fato_suporte_tempo_de_atendimento, :calendario_mes => data, 
+            :departamento => departamento, :tipo_chamado => chamado, :tempo_medio_atendimento => t_medio_atendimento, 
+            :num_chamados_estourados => n_estourados)
+        end
         FactoryGirl.create(:fato_rh_quantidade_funcionario, :quantidade_funcionarios => (rand*25).to_i, :salario_total => rand*50000, :orcamento_previsto => rand*80000, 
                            :orcamento_disponivel => rand*80000, :departamento => departamento, :calendario_mes => data)
       end
@@ -131,6 +160,6 @@ namespace :popular_banco do
       end
 
     end
-    
+
   end
 end
