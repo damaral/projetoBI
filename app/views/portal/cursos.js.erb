@@ -1,43 +1,99 @@
 <%
 if !params[:filtro_1].nil?
-  string_dados = "[['#{@departamentos[1]}',#{@despesas[1]}], 
-  	['#{@departamentos[2]}',#{@despesas[2]}],
-    ['#{@departamentos[3]}',#{@despesas[3]}],
-    ['#{@departamentos[4]}',#{@despesas[4]}],
-    ['#{@departamentos[5]}',#{@despesas[5]}]]"
+  string_dados = "[['Jan', #{@num_estagiarios_ativos[1]}], 
+                   ['Fev', #{@num_estagiarios_ativos[2]}], 
+                   ['Mar', #{@num_estagiarios_ativos[3]}], 
+                   ['Abr', #{@num_estagiarios_ativos[4]}], 
+                   ['Mai', #{@num_estagiarios_ativos[5]}], 
+                   ['Jun', #{@num_estagiarios_ativos[6]}], 
+                   ['Jul', #{@num_estagiarios_ativos[7]}], 
+                   ['Ago', #{@num_estagiarios_ativos[8]}], 
+                   ['Set', #{@num_estagiarios_ativos[9]}], 
+                   ['Out', #{@num_estagiarios_ativos[10]}], 
+                   ['Nov', #{@num_estagiarios_ativos[11]}], 
+                   ['Dez', #{@num_estagiarios_ativos[12]}]]"
 
-   id_div = "chart_div"
+   id_div = "chart_div1"
 
-   string_colunas = "''"
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de Estagiários Ativos']]"
 
-   grafico1 = true
+   tipo_grafico = 2
 
 elsif !params[:filtro_2].nil?
-  string_dados = "[['#{@departamentos[1]}',#{@salarios[1]}, #{@infra[1]}, #{@treinamento[1]}, #{@outros[1]}], 
-  	['#{@departamentos[2]}',#{@salarios[2]}, #{@infra[2]}, #{@treinamento[2]}, #{@outros[2]}],
-    ['#{@departamentos[3]}',#{@salarios[3]}, #{@infra[3]}, #{@treinamento[3]}, #{@outros[3]}],
-    ['#{@departamentos[4]}',#{@salarios[4]}, #{@infra[4]}, #{@treinamento[4]}, #{@outros[4]}],
-    ['#{@departamentos[5]}',#{@salarios[5]}, #{@infra[5]}, #{@treinamento[5]}, #{@outros[5]}]]"
+  string_dados = "[['Jan', #{@num_estagiarios_contratados[1]}], 
+                   ['Fev', #{@num_estagiarios_contratados[2]}], 
+                   ['Mar', #{@num_estagiarios_contratados[3]}], 
+                   ['Abr', #{@num_estagiarios_contratados[4]}], 
+                   ['Mai', #{@num_estagiarios_contratados[5]}], 
+                   ['Jun', #{@num_estagiarios_contratados[6]}], 
+                   ['Jul', #{@num_estagiarios_contratados[7]}], 
+                   ['Ago', #{@num_estagiarios_contratados[8]}], 
+                   ['Set', #{@num_estagiarios_contratados[9]}], 
+                   ['Out', #{@num_estagiarios_contratados[10]}], 
+                   ['Nov', #{@num_estagiarios_contratados[11]}], 
+                   ['Dez', #{@num_estagiarios_contratados[12]}]]"
 
-  id_div = "chart_div2"
+   id_div = "chart_div2"
 
-  string_colunas = "[['string', 'Departamento'],
-                     ['number', 'Salários'],
-                     ['number', 'Infraestrutura'],
-                     ['number', 'Treinamento'],
-                     ['number', 'Outros']]"
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de Estagiários Contratados']]"
 
-   grafico1 = false
+   tipo_grafico = 2
 
+elsif !params[:filtro_3].nil?
+  string_dados = "[['Jan', #{@taxa_de_aceitacao_contrado[1]}], 
+                   ['Fev', #{@taxa_de_aceitacao_contrado[2]}], 
+                   ['Mar', #{@taxa_de_aceitacao_contrado[3]}], 
+                   ['Abr', #{@taxa_de_aceitacao_contrado[4]}], 
+                   ['Mai', #{@taxa_de_aceitacao_contrado[5]}], 
+                   ['Jun', #{@taxa_de_aceitacao_contrado[6]}], 
+                   ['Jul', #{@taxa_de_aceitacao_contrado[7]}], 
+                   ['Ago', #{@taxa_de_aceitacao_contrado[8]}], 
+                   ['Set', #{@taxa_de_aceitacao_contrado[9]}], 
+                   ['Out', #{@taxa_de_aceitacao_contrado[10]}], 
+                   ['Nov', #{@taxa_de_aceitacao_contrado[11]}], 
+                   ['Dez', #{@taxa_de_aceitacao_contrado[12]}]]"
+
+   id_div = "chart_div3"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Taxa de contratos aceitos']]"
+
+   tipo_grafico = 1
+
+elsif !params[:filtro_4].nil?
+  string_dados = "[['Jan', #{@salario_medio[1]}], 
+                   ['Fev', #{@salario_medio[2]}], 
+                   ['Mar', #{@salario_medio[3]}], 
+                   ['Abr', #{@salario_medio[4]}], 
+                   ['Mai', #{@salario_medio[5]}], 
+                   ['Jun', #{@salario_medio[6]}], 
+                   ['Jul', #{@salario_medio[7]}], 
+                   ['Ago', #{@salario_medio[8]}], 
+                   ['Set', #{@salario_medio[9]}], 
+                   ['Out', #{@salario_medio[10]}], 
+                   ['Nov', #{@salario_medio[11]}], 
+                   ['Dez', #{@salario_medio[12]}]]"
+
+   id_div = "chart_div4"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Salário médio']]"
+
+   tipo_grafico = 2
 end
 %>
-grafico = <%= grafico1 %>;
+tipo_grafico = <%= tipo_grafico %>;
 dados = <%= string_dados.html_safe %>;
 id_div = '<%= id_div.html_safe %>';
 colunas = <%= string_colunas.html_safe %>;
-if (grafico) {
-	drawChartPie('Despesas', 'Reais', dados, id_div);
+if (tipo_grafico == 1) {
+  drawChartColumn(dados, colunas, id_div);
+}
+else if (tipo_grafico == 2) {
+  drawChartLine(dados, colunas, id_div);
 }
 else {
-	drawChartColumn(dados, colunas, id_div);
+  drawChartPie('Despesas', 'Reais', dados, id_div);
 }

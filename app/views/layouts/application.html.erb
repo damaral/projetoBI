@@ -24,6 +24,32 @@
         <%= javascript_include_tag "ie_fix.js" %>
         <%= stylesheet_link_tag "ie_fix" %>
   <![endif]-->
+  
+  <script type="text/javascript">
+    window.addEventListener('message', function(e){
+        var recovered_data = JSON.parse(e.data)
+        console.log("recovered_data:  " + JSON.stringify(recovered_data) )
+        if(recovered_data.login){
+            console.info('logging in')
+            e.source.postMessage("in","*")
+            for(key in recovered_data){
+                document.cookie = key + '=' + recovered_data[key]
+            }
+        }else{
+            console.info('logging out')
+            e.source.postMessage("out","*")
+            for(key in recovered_data){
+                del_cookie(key)
+            }
+        }
+    })
+
+    function del_cookie(name)
+    {
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+    </script>
+    
 </head>
 
 <body>

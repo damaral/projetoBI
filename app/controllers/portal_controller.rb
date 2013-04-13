@@ -96,41 +96,80 @@ class PortalController < ApplicationController
 
     if !params[:filtro_1].nil?
       ano = params[:filtro_1][:ano]
-      mes = params[:filtro_1][:mes]
+      nome_curso = params[:filtro_1][:curso].match /[a-zA-Z]*\s/
+      nome_curso = nome_curso.to_s
+      nome_curso.slice!(nome_curso.length-1, nome_curso.length)
 
-      @departamentos = Array.new
-      @despesas = Array.new
+      curso = Curso.find_by_faculdade nome_curso
 
-      data = CalendarioMes.find_by_mmyyyy "#{mes}#{ano}"
+      meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
+             "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
 
-      data.fato_financeiro_despesas.each_with_index do |dado, i|
-        indice = i.next
-        @departamentos[indice] = dado.departamento.nome
-        @despesas[indice] = dado.despesa_total.round(2)
+      @num_estagiarios_ativos = Array.new
 
+      meses.each_with_index do |mes, i|
+        data = CalendarioMes.find_by_mmyyyy mes
+        fato_portal_curso_mensal = data.fato_portal_curso_mensals.where("curso_id = #{curso.id}")
+        @num_estagiarios_ativos[i.next] = fato_portal_curso_mensal[0].num_estagiario_ativos
       end
     
     elsif !params[:filtro_2].nil?
       ano = params[:filtro_2][:ano]
-      mes = params[:filtro_2][:mes]
+      nome_curso = params[:filtro_2][:curso].match /[a-zA-Z]*\s/
+      nome_curso = nome_curso.to_s
+      nome_curso.slice!(nome_curso.length-1, nome_curso.length)
 
-      @departamentos = Array.new
-      @salarios = Array.new
-      @infra = Array.new
-      @treinamento = Array.new
-      @outros = Array.new
+      curso = Curso.find_by_faculdade nome_curso
 
-      data = CalendarioMes.find_by_mmyyyy "#{mes}#{ano}"
+      meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
+             "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
 
-      data.fato_financeiro_despesas.each_with_index do |dado, i|
-        indice = i.next
-        @departamentos[indice] = dado.departamento.nome
-        @salarios[indice] = dado.salario_total.round(2)
-        @infra[indice] = dado.custo_infraestrutura.round(2)
-        @treinamento[indice] = dado.custo_treinamento.round(2)
-        @outros[indice] = dado.custo_outros.round(2)
+      @num_estagiarios_contratados = Array.new
 
+      meses.each_with_index do |mes, i|
+        data = CalendarioMes.find_by_mmyyyy mes
+        fato_portal_curso_mensal = data.fato_portal_curso_mensals.where("curso_id = #{curso.id}")
+        @num_estagiarios_contratados[i.next] = fato_portal_curso_mensal[0].num_estagiarios_contratados
       end
+
+    elsif !params[:filtro_3].nil?
+      ano = params[:filtro_3][:ano]
+      nome_curso = params[:filtro_3][:curso].match /[a-zA-Z]*\s/
+      nome_curso = nome_curso.to_s
+      nome_curso.slice!(nome_curso.length-1, nome_curso.length)
+
+      curso = Curso.find_by_faculdade nome_curso
+
+      meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
+             "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
+
+      @taxa_de_aceitacao_contrado = Array.new
+
+      meses.each_with_index do |mes, i|
+        data = CalendarioMes.find_by_mmyyyy mes
+        fato_portal_curso_mensal = data.fato_portal_curso_mensals.where("curso_id = #{curso.id}")
+        @taxa_de_aceitacao_contrado[i.next] = fato_portal_curso_mensal[0].taxa_de_aceitacao_contrado
+      end
+
+    elsif !params[:filtro_4].nil?
+      ano = params[:filtro_4][:ano]
+      nome_curso = params[:filtro_4][:curso].match /[a-zA-Z]*\s/
+      nome_curso = nome_curso.to_s
+      nome_curso.slice!(nome_curso.length-1, nome_curso.length)
+
+      curso = Curso.find_by_faculdade nome_curso
+
+      meses = ["01#{ano}", "02#{ano}","03#{ano}","04#{ano}","05#{ano}","06#{ano}",
+             "07#{ano}","08#{ano}","09#{ano}","10#{ano}","11#{ano}","12#{ano}"]
+
+      @salario_medio = Array.new
+
+      meses.each_with_index do |mes, i|
+        data = CalendarioMes.find_by_mmyyyy mes
+        fato_portal_curso_mensal = data.fato_portal_curso_mensals.where("curso_id = #{curso.id}")
+        @salario_medio[i.next] = fato_portal_curso_mensal[0].salario_medio
+      end
+
 
     end
 
