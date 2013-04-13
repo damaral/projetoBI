@@ -4,6 +4,7 @@ class CreateFatoPortalCursoMensals < ActiveRecord::Migration
       t.integer :num_estagiarios_contratados
       t.float :taxa_de_aceitacao_contrado
       t.integer :num_estagiario_ativos
+      t.float :salario_medio
       t.references :calendario_mes
       t.references :curso
 

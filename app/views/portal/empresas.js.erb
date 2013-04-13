@@ -1,0 +1,119 @@
+<%
+if !params[:filtro_1].nil?
+  string_dados = "[['Jan',#{@vagas[1]}, #{@contratacoes[1]}], 
+                   ['Fev',#{@vagas[2]}, #{@contratacoes[2]}], 
+                   ['Mar',#{@vagas[3]}, #{@contratacoes[3]}], 
+                   ['Abr',#{@vagas[4]}, #{@contratacoes[4]}], 
+                   ['Mai',#{@vagas[5]}, #{@contratacoes[5]}], 
+                   ['Jun',#{@vagas[6]}, #{@contratacoes[6]}], 
+                   ['Jul',#{@vagas[7]}, #{@contratacoes[7]}], 
+                   ['Ago',#{@vagas[8]}, #{@contratacoes[8]}], 
+                   ['Set',#{@vagas[9]}, #{@contratacoes[9]}], 
+                   ['Out',#{@vagas[10]}, #{@contratacoes[10]}], 
+                   ['Nov',#{@vagas[11]}, #{@contratacoes[11]}], 
+                   ['Dez',#{@vagas[12]}, #{@contratacoes[12]}]]"
+
+   id_div = "chart_div"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Vagas'],
+                     ['number', 'Contratações']]"
+
+   tipo_grafico = 1
+
+elsif !params[:filtro_2].nil?
+  string_dados = "[['Jan', #{@num_estagiarios[1]}], 
+                   ['Fev', #{@num_estagiarios[2]}], 
+                   ['Mar', #{@num_estagiarios[3]}], 
+                   ['Abr', #{@num_estagiarios[4]}], 
+                   ['Mai', #{@num_estagiarios[5]}], 
+                   ['Jun', #{@num_estagiarios[6]}], 
+                   ['Jul', #{@num_estagiarios[7]}], 
+                   ['Ago', #{@num_estagiarios[8]}], 
+                   ['Set', #{@num_estagiarios[9]}], 
+                   ['Out', #{@num_estagiarios[10]}], 
+                   ['Nov', #{@num_estagiarios[11]}], 
+                   ['Dez', #{@num_estagiarios[12]}]]"
+
+   id_div = "chart_div2"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de Estagiários']]"
+
+   tipo_grafico = 1
+
+elsif !params[:filtro_3].nil?
+  string_dados = "[['Jan', #{@num_medio_dias_contratacao[1]}], 
+                   ['Fev', #{@num_medio_dias_contratacao[2]}], 
+                   ['Mar', #{@num_medio_dias_contratacao[3]}], 
+                   ['Abr', #{@num_medio_dias_contratacao[4]}], 
+                   ['Mai', #{@num_medio_dias_contratacao[5]}], 
+                   ['Jun', #{@num_medio_dias_contratacao[6]}], 
+                   ['Jul', #{@num_medio_dias_contratacao[7]}], 
+                   ['Ago', #{@num_medio_dias_contratacao[8]}], 
+                   ['Set', #{@num_medio_dias_contratacao[9]}], 
+                   ['Out', #{@num_medio_dias_contratacao[10]}], 
+                   ['Nov', #{@num_medio_dias_contratacao[11]}], 
+                   ['Dez', #{@num_medio_dias_contratacao[12]}]]"
+
+   id_div = "chart_div3"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número médio dias contratação']]"
+
+   tipo_grafico = 2
+
+elsif !params[:filtro_4].nil?
+  string_dados = "[['Jan',#{@num_demissoes_voluntarias[1]}, #{@num_demissoes_involuntarias[1]}], 
+                   ['Fev',#{@num_demissoes_voluntarias[2]}, #{@num_demissoes_involuntarias[2]}], 
+                   ['Mar',#{@num_demissoes_voluntarias[3]}, #{@num_demissoes_involuntarias[3]}], 
+                   ['Abr',#{@num_demissoes_voluntarias[4]}, #{@num_demissoes_involuntarias[4]}], 
+                   ['Mai',#{@num_demissoes_voluntarias[5]}, #{@num_demissoes_involuntarias[5]}], 
+                   ['Jun',#{@num_demissoes_voluntarias[6]}, #{@num_demissoes_involuntarias[6]}], 
+                   ['Jul',#{@num_demissoes_voluntarias[7]}, #{@num_demissoes_involuntarias[7]}], 
+                   ['Ago',#{@num_demissoes_voluntarias[8]}, #{@num_demissoes_involuntarias[8]}], 
+                   ['Set',#{@num_demissoes_voluntarias[9]}, #{@num_demissoes_involuntarias[9]}], 
+                   ['Out',#{@num_demissoes_voluntarias[10]}, #{@num_demissoes_involuntarias[10]}], 
+                   ['Nov',#{@num_demissoes_voluntarias[11]}, #{@num_demissoes_involuntarias[11]}], 
+                   ['Dez',#{@num_demissoes_voluntarias[12]}, #{@num_demissoes_involuntarias[12]}]]"
+
+   id_div = "chart_div4"
+
+   string_colunas = "[['string', 'Mês'],
+                     ['number', 'Número de demissões voluntárias'],
+                     ['number', 'Número de demissões involuntárias']]"
+
+   tipo_grafico = 1
+
+elsif !params[:filtro_5].nil?
+  string_dados = "["
+
+  @num_estagiarios.each do |faculdade, numero|
+    string_dados << "['#{faculdade}', #{numero}], "
+  end
+
+  string_dados = string_dados.slice!(0..string_dados.length-3)
+  string_dados << "]"                   
+
+   id_div = "chart_div5"
+
+   string_colunas = "''"
+
+   grafico1 = true
+
+   tipo_grafico = 3
+end
+%>
+tipo_grafico = <%= tipo_grafico %>;
+dados = <%= string_dados.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+colunas = <%= string_colunas.html_safe %>;
+if (tipo_grafico == 1) {
+	drawChartColumn(dados, colunas, id_div);
+}
+else if (tipo_grafico == 2) {
+  drawChartLine(dados, colunas, id_div);
+}
+else {
+  drawChartPie('Despesas', 'Reais', dados, id_div);
+}

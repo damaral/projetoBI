@@ -1,0 +1,43 @@
+<%
+if !params[:filtro_1].nil?
+  string_dados = "[['#{@departamentos[1]}',#{@despesas[1]}], 
+  	['#{@departamentos[2]}',#{@despesas[2]}],
+    ['#{@departamentos[3]}',#{@despesas[3]}],
+    ['#{@departamentos[4]}',#{@despesas[4]}],
+    ['#{@departamentos[5]}',#{@despesas[5]}]]"
+
+   id_div = "chart_div"
+
+   string_colunas = "''"
+
+   grafico1 = true
+
+elsif !params[:filtro_2].nil?
+  string_dados = "[['#{@departamentos[1]}',#{@salarios[1]}, #{@infra[1]}, #{@treinamento[1]}, #{@outros[1]}], 
+  	['#{@departamentos[2]}',#{@salarios[2]}, #{@infra[2]}, #{@treinamento[2]}, #{@outros[2]}],
+    ['#{@departamentos[3]}',#{@salarios[3]}, #{@infra[3]}, #{@treinamento[3]}, #{@outros[3]}],
+    ['#{@departamentos[4]}',#{@salarios[4]}, #{@infra[4]}, #{@treinamento[4]}, #{@outros[4]}],
+    ['#{@departamentos[5]}',#{@salarios[5]}, #{@infra[5]}, #{@treinamento[5]}, #{@outros[5]}]]"
+
+  id_div = "chart_div2"
+
+  string_colunas = "[['string', 'Departamento'],
+                     ['number', 'Salários'],
+                     ['number', 'Infraestrutura'],
+                     ['number', 'Treinamento'],
+                     ['number', 'Outros']]"
+
+   grafico1 = false
+
+end
+%>
+grafico = <%= grafico1 %>;
+dados = <%= string_dados.html_safe %>;
+id_div = '<%= id_div.html_safe %>';
+colunas = <%= string_colunas.html_safe %>;
+if (grafico) {
+	drawChartPie('Despesas', 'Reais', dados, id_div);
+}
+else {
+	drawChartColumn(dados, colunas, id_div);
+}

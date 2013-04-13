@@ -113,6 +113,7 @@ ActiveRecord::Schema.define(:version => 20130313173317) do
     t.integer  "num_estagiarios_contratados"
     t.float    "taxa_de_aceitacao_contrado"
     t.integer  "num_estagiario_ativos"
+    t.float    "salario_medio"
     t.integer  "calendario_mes_id"
     t.integer  "curso_id"
     t.datetime "created_at",                  :null => false
