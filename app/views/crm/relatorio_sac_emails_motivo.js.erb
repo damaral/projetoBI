@@ -8,6 +8,15 @@
 	string_dados = string_dados.slice!(0, string_dados.length - 1)
   	string_dados = string_dados + "]"
 
+  	if !params[:filtro_total].nil?
+	id_div = "chart_div"
+
+	elsif !params[:filtro_tempo_medio].nil?
+	id_div = "chart_div2"
+
+	end
+
 %>
 dados = <%= string_dados.html_safe %>;
-drawChartPie('Motivo', 'Quantidade', dados, 'chart_div');
+id_div = '<%= id_div.html_safe %>';
+drawChartPie('Motivo', 'Quantidade', dados, id_div);
