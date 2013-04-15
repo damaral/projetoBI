@@ -79,6 +79,8 @@ namespace :popular_banco do
 
 
     cac = 500
+    roi = 1200
+    receita_por_campanha = 35000
 
     departamentos = Array.new
     departamentos_nomes = ["RH", "Financeiro", "CRM e Marketing", "Portal", "Suporte e Gestao"] 
@@ -99,16 +101,19 @@ namespace :popular_banco do
 
     data_mes.each_with_index do |data, j|
       cac = cac*0.95
+      roi = roi*1.01
+      receita_por_campanha = receita_por_campanha*1.013
+
       rand(j)
       prod = 10000*rand
       FactoryGirl.create(:fato_rh_produtividade, :calendario_mes => data, :produtividade_real => prod*1.15, :produtividade_total => prod)
 
-      FactoryGirl.create(:fato_crm_kpi, :calendario_mes => data, :cac => cac)
+      FactoryGirl.create(:fato_crm_kpi, :calendario_mes => data, :cac => cac, :roi => roi, :receita_por_campanha =>receita_por_campanha)
       
 
       motivos.each_with_index do |motivo, i|
 
-        FactoryGirl.create(:fato_crm_sac, :calendario_mes => data, :motivo => motivo, :tempo_medio_atendimento => 4, :total_email_recebidos => data.ano-1980 + data.mes*i, :total_emails_respondidos => 38)
+        FactoryGirl.create(:fato_crm_sac, :calendario_mes => data, :motivo => motivo, :tempo_medio_atendimento => data.ano/1000 + (data.mes/1.5)*i, :total_email_recebidos => data.ano-1980 + data.mes*i, :total_emails_respondidos => 38)
       end 
       
 

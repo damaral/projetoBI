@@ -1,8 +1,23 @@
 <%
 string_dados = "[['Jan',#{@dados[1]}], ['Fev',#{@dados[2]}], ['Mar',#{@dados[3]}], ['Abr',#{@dados[4]}], ['Mai',#{@dados[5]}], ['Jun',#{@dados[6]}], ['Jul',#{@dados[7]}], ['Ago',#{@dados[8]}], ['Set',#{@dados[9]}], ['Out',#{@dados[10]}], ['Nov',#{@dados[11]}], ['Dez',#{@dados[12]}]]"
-string_colunas = "[['string', 'Mês'], ['number', 'CAC']]"
+
+
+if !params[:filtro_cac].nil?
+	string_colunas = "[['string', 'Mês'], ['number', 'CAC']]"
+	id_div = "chart_div"
+
+elsif !params[:filtro_roi].nil?
+	string_colunas = "[['string', 'Mês'], ['number', 'ROI']]"
+	id_div = "chart_div2"
+
+elsif !params[:filtro_campanha].nil?
+	string_colunas = "[['string', 'Mês'], ['number', 'Receita por Campanha']]"
+	id_div = "chart_div3"
+
+end
 
 %>
 dados = <%= string_dados.html_safe %>;
 colunas = <%= string_colunas.html_safe %>;
-drawChartLine(dados, colunas, 'chart_div');
+id_div = '<%= id_div.html_safe %>';
+drawChartLine(dados, colunas, id_div);
