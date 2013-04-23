@@ -33,7 +33,7 @@
             console.info('logging in')
             e.source.postMessage("in","*")
             for(key in recovered_data){
-                document.cookie = key + '=' + recovered_data[key]
+              document.cookie = key + '=' + recovered_data[key] + "; path=/"
             }
         }else{
             console.info('logging out')
