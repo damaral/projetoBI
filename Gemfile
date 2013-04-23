@@ -28,6 +28,8 @@ gem 'simple_form'
 
 gem 'factory_girl_rails'
 
+gem 'rest-client'
+
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
 end
